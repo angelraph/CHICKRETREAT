@@ -144,7 +144,7 @@ export default function PropertyDetailClient({ property, agent }: Props) {
                   </>
                 )}
                 <div className="absolute bottom-4 right-4">
-                  <span className="text-sm font-bold px-3 py-1.5 rounded-full text-white" style={{ backgroundColor: property.listingType === 'rent' ? '#7c3aed' : '#C9A96E' }}>
+                  <span className="text-sm font-bold px-3 py-1.5 rounded-full text-white" style={{ backgroundColor: property.listingType === 'rent' ? '#7c3aed' : '#C8A84A' }}>
                     For {property.listingType === 'rent' ? 'Rent' : 'Sale'}
                   </span>
                 </div>
@@ -159,7 +159,7 @@ export default function PropertyDetailClient({ property, agent }: Props) {
                     aria-label={`View photo ${i + 1}`}
                     aria-pressed={activeImg === i}
                     className="relative h-16 w-24 flex-shrink-0 rounded-lg overflow-hidden border-2 transition-all"
-                    style={{ borderColor: activeImg === i ? '#C9A96E' : 'transparent' }}
+                    style={{ borderColor: activeImg === i ? '#C8A84A' : 'transparent' }}
                   >
                     <Image src={img} alt="" fill className="object-cover" quality={60} placeholder="blur" blurDataURL={BLUR_DATA_URL} />
                   </button>
@@ -170,20 +170,20 @@ export default function PropertyDetailClient({ property, agent }: Props) {
             {/* Title + Price */}
             <div>
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-2">
-                <h1 className="text-2xl sm:text-3xl font-bold font-heading" style={{ color: '#0A1F44' }}>
+                <h1 className="text-2xl sm:text-3xl font-bold font-heading" style={{ color: '#1A3828' }}>
                   {property.title}
                 </h1>
                 <div className="text-right flex-shrink-0">
                   <p className="text-xs text-gray-400 uppercase tracking-wide">
                     {property.listingType === 'rent' ? 'Monthly Rent' : 'Asking Price'}
                   </p>
-                  <p className="text-2xl sm:text-3xl font-bold" style={{ color: '#C9A96E' }}>
+                  <p className="text-2xl sm:text-3xl font-bold" style={{ color: '#C8A84A' }}>
                     {formatPrice(property.price, property.listingType)}
                   </p>
                 </div>
               </div>
               <p className="flex items-center gap-1.5 text-gray-500">
-                <MapPin size={16} style={{ color: '#C9A96E' }} aria-hidden="true" />
+                <MapPin size={16} style={{ color: '#C8A84A' }} aria-hidden="true" />
                 {property.address}, {property.city}, {property.state} {property.zip}
               </p>
               {property.openHouse && (
@@ -203,16 +203,16 @@ export default function PropertyDetailClient({ property, agent }: Props) {
                 { icon: Car, label: 'Garage Spaces', value: property.garage },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="bg-gray-50 rounded-2xl p-4 text-center border border-gray-100">
-                  <Icon size={22} className="mx-auto mb-2" style={{ color: '#C9A96E' }} aria-hidden="true" />
+                  <Icon size={22} className="mx-auto mb-2" style={{ color: '#C8A84A' }} aria-hidden="true" />
                   <dt className="text-xs text-gray-500 mt-0.5 order-last">{label}</dt>
-                  <dd className="text-lg font-bold" style={{ color: '#0A1F44' }}>{value}</dd>
+                  <dd className="text-lg font-bold" style={{ color: '#1A3828' }}>{value}</dd>
                 </div>
               ))}
             </dl>
 
             {/* Description */}
             <div className="bg-white rounded-2xl border border-gray-100 p-6">
-              <h2 className="text-lg font-bold mb-4 font-heading" style={{ color: '#0A1F44' }}>About This Property</h2>
+              <h2 className="text-lg font-bold mb-4 font-heading" style={{ color: '#1A3828' }}>About This Property</h2>
               <p className="text-gray-600 leading-relaxed">{property.description}</p>
               <dl className="grid grid-cols-2 gap-x-6 gap-y-2 mt-5 pt-5 border-t border-gray-100 text-sm text-gray-600">
                 <div className="flex justify-between">
@@ -238,11 +238,11 @@ export default function PropertyDetailClient({ property, agent }: Props) {
 
             {/* Features */}
             <div className="bg-white rounded-2xl border border-gray-100 p-6">
-              <h2 className="text-lg font-bold mb-4 font-heading" style={{ color: '#0A1F44' }}>Features & Amenities</h2>
+              <h2 className="text-lg font-bold mb-4 font-heading" style={{ color: '#1A3828' }}>Features & Amenities</h2>
               <ul className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {property.features.map(feature => (
                   <li key={feature} className="flex items-center gap-2 text-sm text-gray-700">
-                    <CheckCircle2 size={16} style={{ color: '#C9A96E' }} className="flex-shrink-0" aria-hidden="true" />
+                    <CheckCircle2 size={16} style={{ color: '#C8A84A' }} className="flex-shrink-0" aria-hidden="true" />
                     {feature}
                   </li>
                 ))}
@@ -251,7 +251,7 @@ export default function PropertyDetailClient({ property, agent }: Props) {
 
             {/* Map Placeholder */}
             <div className="bg-white rounded-2xl border border-gray-100 p-6">
-              <h2 className="text-lg font-bold mb-4 font-heading" style={{ color: '#0A1F44' }}>Location</h2>
+              <h2 className="text-lg font-bold mb-4 font-heading" style={{ color: '#1A3828' }}>Location</h2>
               <div
                 className="w-full h-56 rounded-xl flex items-center justify-center text-gray-400 text-sm"
                 style={{ background: 'linear-gradient(135deg, #e8f4fd, #dbeafe)' }}
@@ -269,7 +269,7 @@ export default function PropertyDetailClient({ property, agent }: Props) {
 
             {/* Mortgage Estimator */}
             <div className="bg-white rounded-2xl border border-gray-100 p-6">
-              <h2 className="text-lg font-bold mb-4 font-heading" style={{ color: '#0A1F44' }}>Mortgage Estimator</h2>
+              <h2 className="text-lg font-bold mb-4 font-heading" style={{ color: '#1A3828' }}>Mortgage Estimator</h2>
               {property.listingType === 'buy' ? (
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {[
@@ -284,7 +284,7 @@ export default function PropertyDetailClient({ property, agent }: Props) {
                     return (
                       <div key={label} className="bg-gray-50 rounded-xl p-4 border border-gray-100">
                         <p className="text-xs font-semibold text-gray-500 mb-1">{label} · {rate}% rate</p>
-                        <p className="text-xl font-bold" style={{ color: '#C9A96E' }}>
+                        <p className="text-xl font-bold" style={{ color: '#C8A84A' }}>
                           ${Math.round(payment).toLocaleString()}<span className="text-sm font-normal text-gray-400">/mo</span>
                         </p>
                         <p className="text-xs text-gray-400 mt-1">30-year fixed estimate</p>
@@ -302,7 +302,7 @@ export default function PropertyDetailClient({ property, agent }: Props) {
           <div className="space-y-6">
             {agent && (
               <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sticky top-24">
-                <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: '#C9A96E' }}>Listed By</p>
+                <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: '#C8A84A' }}>Listed By</p>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="relative w-14 h-14 rounded-full overflow-hidden flex-shrink-0 ring-2 ring-amber-100">
                     <Image src={agent.photo} alt={agent.name} fill className="object-cover" quality={80} />
@@ -388,7 +388,7 @@ export default function PropertyDetailClient({ property, agent }: Props) {
                       type="submit"
                       disabled={submitting}
                       className="w-full py-3 rounded-xl text-sm font-semibold text-white transition-all hover:opacity-90 disabled:opacity-60"
-                      style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+                      style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}
                     >
                       {submitting ? 'Sending…' : 'Send Message'}
                     </button>
@@ -411,7 +411,7 @@ export default function PropertyDetailClient({ property, agent }: Props) {
         {/* Similar Properties */}
         {similar.length > 0 && (
           <section aria-labelledby="similar-heading" className="mt-16">
-            <h2 id="similar-heading" className="text-2xl font-bold font-heading mb-8" style={{ color: '#0A1F44' }}>
+            <h2 id="similar-heading" className="text-2xl font-bold font-heading mb-8" style={{ color: '#1A3828' }}>
               Similar Properties
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">

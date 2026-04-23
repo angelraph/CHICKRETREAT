@@ -147,14 +147,14 @@ export default function PropertyCard({ property, variant = 'default' }: Property
             <p className="text-xs text-gray-400 uppercase tracking-wide mb-0.5">
               {property.listingType === 'rent' ? 'Monthly Rent' : 'Asking Price'}
             </p>
-            <p className="text-xl font-bold" style={{ color: '#C9A96E' }}>
+            <p className="text-xl font-bold" style={{ color: '#C8A84A' }}>
               {formatPrice(property.price, property.listingType)}
             </p>
           </div>
           <Link
             href={`/properties/${property.id}`}
             className="px-4 py-2 rounded-xl text-sm font-semibold text-white transition-all hover:opacity-90 hover:shadow-md"
-            style={{ background: 'linear-gradient(135deg, #0A1F44, #112a5a)' }}
+            style={{ background: 'linear-gradient(135deg, #1A3828, #245035)' }}
           >
             View Details
           </Link>

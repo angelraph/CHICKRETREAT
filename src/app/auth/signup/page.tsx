@@ -24,12 +24,12 @@ export default function SignupPage() {
           <div className="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-6">
             <CheckCircle2 size={40} className="text-green-600" />
           </div>
-          <h2 className="text-2xl font-bold font-heading mb-2" style={{ color: '#0A1F44' }}>Account Created!</h2>
-          <p className="text-gray-500 text-sm mb-6">Welcome to LuxeEstates. Your account is ready — start exploring extraordinary properties.</p>
+          <h2 className="text-2xl font-bold font-heading mb-2" style={{ color: '#1A3828' }}>Account Created!</h2>
+          <p className="text-gray-500 text-sm mb-6">Welcome to ChicsRetreat. Your account is ready — start exploring extraordinary properties.</p>
           <Link
             href="/properties"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl text-sm font-semibold text-white hover:opacity-90 transition-all"
-            style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+            style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}
           >
             Browse Properties <ArrowRight size={16} />
           </Link>
@@ -60,16 +60,33 @@ export default function SignupPage() {
       {/* Right: Form */}
       <div className="flex-1 flex items-center justify-center px-4 py-24 sm:px-8">
         <div className="w-full max-w-md">
-          <Link href="/" className="flex items-center gap-2 mb-10">
-            <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}>
-              <span className="text-white font-bold text-sm">L</span>
+          <Link href="/" className="flex items-center gap-2.5 mb-10">
+            <svg width="34" height="34" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="cr-sg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stopColor="#E8C870" /><stop offset="50%" stopColor="#C8A84A" /><stop offset="100%" stopColor="#A07830" />
+                </linearGradient>
+                <linearGradient id="cr-sbg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stopColor="#245035" /><stop offset="100%" stopColor="#1A3828" />
+                </linearGradient>
+              </defs>
+              <rect width="36" height="36" rx="6" fill="url(#cr-sbg)" />
+              <polyline points="18,4 31,14 31,13" stroke="url(#cr-sg)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+              <polyline points="18,4 5,14 5,13" stroke="url(#cr-sg)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+              <line x1="5" y1="14" x2="31" y2="14" stroke="url(#cr-sg)" strokeWidth="2" strokeLinecap="round" />
+              <text x="18" y="29" textAnchor="middle" fill="url(#cr-sg)" fontSize="11" fontWeight="700" fontFamily="serif" letterSpacing="1">CR</text>
+            </svg>
+            <div className="flex flex-col leading-none">
+              <span className="font-brand text-[15px] font-bold" style={{ color: '#1A3828', letterSpacing: '0.12em' }}>
+                CHICS<span style={{ color: '#C8A84A' }}>RETREAT</span>
+              </span>
+              <span className="text-[9px] uppercase font-medium" style={{ color: '#A07830', letterSpacing: '0.15em' }}>
+                Luxury · Comfort · Everything
+              </span>
             </div>
-            <span className="text-xl font-bold font-heading" style={{ color: '#0A1F44' }}>
-              Luxe<span style={{ color: '#C9A96E' }}>Estates</span>
-            </span>
           </Link>
 
-          <h1 className="text-3xl font-bold font-heading mb-2" style={{ color: '#0A1F44' }}>Create your account</h1>
+          <h1 className="text-3xl font-bold font-heading mb-2" style={{ color: '#1A3828' }}>Create your account</h1>
           <p className="text-gray-500 text-sm mb-8">Join thousands of clients finding their perfect luxury property.</p>
 
           {/* Role Selector */}
@@ -85,7 +102,7 @@ export default function SignupPage() {
                 onClick={() => setRole(value)}
                 className="flex-1 py-2.5 text-sm font-medium transition-all"
                 style={role === value
-                  ? { background: '#0A1F44', color: '#fff' }
+                  ? { background: '#1A3828', color: '#fff' }
                   : { background: '#f9fafb', color: '#6b7280' }
                 }
               >
@@ -165,9 +182,9 @@ export default function SignupPage() {
               <input type="checkbox" required id="terms" className="mt-0.5 accent-amber-500" />
               <label htmlFor="terms" className="text-xs text-gray-500 leading-relaxed">
                 I agree to the{' '}
-                <Link href="#" className="font-medium hover:underline" style={{ color: '#C9A96E' }}>Terms of Service</Link>
+                <Link href="#" className="font-medium hover:underline" style={{ color: '#C8A84A' }}>Terms of Service</Link>
                 {' '}and{' '}
-                <Link href="#" className="font-medium hover:underline" style={{ color: '#C9A96E' }}>Privacy Policy</Link>.
+                <Link href="#" className="font-medium hover:underline" style={{ color: '#C8A84A' }}>Privacy Policy</Link>.
                 I understand I may receive property alerts and market updates.
               </label>
             </div>
@@ -176,7 +193,7 @@ export default function SignupPage() {
               type="submit"
               disabled={loading}
               className="w-full py-3.5 rounded-xl text-sm font-semibold text-white flex items-center justify-center gap-2 hover:opacity-90 transition-all disabled:opacity-60"
-              style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+              style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}
             >
               {loading ? (
                 <div className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
@@ -217,7 +234,7 @@ export default function SignupPage() {
 
           <p className="text-center text-sm text-gray-500 mt-8">
             Already have an account?{' '}
-            <Link href="/auth/login" className="font-semibold hover:underline" style={{ color: '#C9A96E' }}>
+            <Link href="/auth/login" className="font-semibold hover:underline" style={{ color: '#C8A84A' }}>
               Sign in
             </Link>
           </p>

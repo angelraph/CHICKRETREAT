@@ -28,19 +28,19 @@ export default function DashboardPage() {
   const recentlyViewed = properties.slice(0, 3);
 
   return (
-    <div className="min-h-screen pt-20" style={{ backgroundColor: '#FAF7F2' }}>
+    <div className="min-h-screen pt-20" style={{ backgroundColor: '#F5F0E8' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         {/* Header */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-10">
           <div className="flex items-center gap-4">
             <div
               className="w-14 h-14 rounded-2xl flex items-center justify-center text-white text-xl font-bold font-heading shadow-lg"
-              style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+              style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}
             >
               A
             </div>
             <div>
-              <h1 className="text-2xl font-bold font-heading" style={{ color: '#0A1F44' }}>
+              <h1 className="text-2xl font-bold font-heading" style={{ color: '#1A3828' }}>
                 Welcome back, Alexandra
               </h1>
               <p className="text-sm text-gray-500">Last active: Today at 9:41 AM</p>
@@ -50,7 +50,7 @@ export default function DashboardPage() {
             <Link
               href="/properties"
               className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-sm font-semibold text-white transition-all hover:opacity-90"
-              style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+              style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}
             >
               <Home size={15} /> Browse Properties
             </Link>
@@ -65,7 +65,7 @@ export default function DashboardPage() {
           {[
             { icon: Heart, label: 'Saved Properties', value: '12', trend: '+2 this week', color: '#ef4444' },
             { icon: Eye, label: 'Properties Viewed', value: '47', trend: '+8 this week', color: '#3b82f6' },
-            { icon: Bell, label: 'Active Alerts', value: '3', trend: '13 new matches', color: '#C9A96E' },
+            { icon: Bell, label: 'Active Alerts', value: '3', trend: '13 new matches', color: '#C8A84A' },
             { icon: FileText, label: 'Inquiries Sent', value: '5', trend: '2 responses', color: '#10b981' },
           ].map(({ icon: Icon, label, value, trend, color }) => (
             <div key={label} className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
@@ -75,7 +75,7 @@ export default function DashboardPage() {
                 </div>
                 <TrendingUp size={14} className="text-green-500" />
               </div>
-              <p className="text-2xl font-bold font-heading mb-0.5" style={{ color: '#0A1F44' }}>{value}</p>
+              <p className="text-2xl font-bold font-heading mb-0.5" style={{ color: '#1A3828' }}>{value}</p>
               <p className="text-xs text-gray-400">{label}</p>
               <p className="text-xs mt-1 text-green-600 font-medium">{trend}</p>
             </div>
@@ -96,7 +96,7 @@ export default function DashboardPage() {
                 onClick={() => setActiveTab(id)}
                 className="flex-1 sm:flex-none flex items-center justify-center sm:justify-start gap-2 px-4 sm:px-6 py-4 text-sm font-medium transition-all border-b-2"
                 style={activeTab === id
-                  ? { color: '#C9A96E', borderBottomColor: '#C9A96E', backgroundColor: '#fffbf5' }
+                  ? { color: '#C8A84A', borderBottomColor: '#C8A84A', backgroundColor: '#fffbf5' }
                   : { color: '#6b7280', borderBottomColor: 'transparent' }
                 }
               >
@@ -115,7 +115,7 @@ export default function DashboardPage() {
                     <Heart size={40} className="mx-auto mb-3 text-gray-200" />
                     <p className="font-semibold text-gray-400">No saved properties yet</p>
                     <p className="text-sm text-gray-400 mt-1">Click the heart icon on any listing to save it here.</p>
-                    <Link href="/properties" className="mt-4 inline-block text-sm font-medium hover:underline" style={{ color: '#C9A96E' }}>
+                    <Link href="/properties" className="mt-4 inline-block text-sm font-medium hover:underline" style={{ color: '#C8A84A' }}>
                       Browse properties
                     </Link>
                   </div>
@@ -132,7 +132,7 @@ export default function DashboardPage() {
                             </div>
                           </div>
                           <div className="absolute bottom-2 left-2">
-                            <span className="text-xs font-bold text-white px-2 py-0.5 rounded-full" style={{ backgroundColor: '#C9A96E' }}>
+                            <span className="text-xs font-bold text-white px-2 py-0.5 rounded-full" style={{ backgroundColor: '#C8A84A' }}>
                               {formatPrice(p.price, p.listingType)}
                             </span>
                           </div>
@@ -150,7 +150,7 @@ export default function DashboardPage() {
                           <Link
                             href={`/properties/${p.id}`}
                             className="mt-3 w-full flex items-center justify-center gap-1 py-2 rounded-lg text-xs font-semibold text-white hover:opacity-90"
-                            style={{ background: 'linear-gradient(135deg, #0A1F44, #112a5a)' }}
+                            style={{ background: 'linear-gradient(135deg, #1A3828, #245035)' }}
                           >
                             View Details <ArrowRight size={11} />
                           </Link>
@@ -181,7 +181,7 @@ export default function DashboardPage() {
                       </p>
                     </div>
                     <div className="text-right flex-shrink-0">
-                      <p className="font-bold text-sm" style={{ color: '#C9A96E' }}>{formatPrice(p.price, p.listingType)}</p>
+                      <p className="font-bold text-sm" style={{ color: '#C8A84A' }}>{formatPrice(p.price, p.listingType)}</p>
                       <p className="text-xs text-gray-400 flex items-center gap-1 justify-end mt-0.5">
                         <Clock size={10} />
                         {i === 0 ? '2 hrs ago' : i === 1 ? 'Yesterday' : '3 days ago'}
@@ -201,7 +201,7 @@ export default function DashboardPage() {
                       className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
                       style={{ backgroundColor: alert.active ? '#fffbf5' : '#f9fafb' }}
                     >
-                      <Bell size={16} style={{ color: alert.active ? '#C9A96E' : '#9ca3af' }} />
+                      <Bell size={16} style={{ color: alert.active ? '#C8A84A' : '#9ca3af' }} />
                     </div>
                     <div className="flex-1">
                       <p className="font-semibold text-gray-900 text-sm">{alert.label}</p>
@@ -232,10 +232,10 @@ export default function DashboardPage() {
         {/* Recommended */}
         <div className="mt-10">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl font-bold font-heading" style={{ color: '#0A1F44' }}>
+            <h2 className="text-xl font-bold font-heading" style={{ color: '#1A3828' }}>
               Recommended For You
             </h2>
-            <Link href="/properties" className="text-sm font-medium hover:underline" style={{ color: '#C9A96E' }}>
+            <Link href="/properties" className="text-sm font-medium hover:underline" style={{ color: '#C8A84A' }}>
               View all
             </Link>
           </div>

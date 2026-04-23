@@ -49,12 +49,12 @@ export async function POST(req: NextRequest) {
     });
 
     await transporter.sendMail({
-      from: `"LuxeEstates Website" <${process.env.SMTP_USER}>`,
+      from: `"ChicsRetreat Website" <${process.env.SMTP_USER}>`,
       to: process.env.CONTACT_TO_EMAIL,
       replyTo: email,
       subject: subject ?? `New Inquiry from ${name}`,
       html: `
-        <h2 style="color:#0A1F44">New Contact Form Submission</h2>
+        <h2 style="color:#1A3828">New Contact Form Submission</h2>
         <table cellpadding="6" style="font-family:sans-serif;font-size:14px">
           <tr><td><strong>Name:</strong></td><td>${name}</td></tr>
           <tr><td><strong>Email:</strong></td><td><a href="mailto:${email}">${email}</a></td></tr>

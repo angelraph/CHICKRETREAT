@@ -40,16 +40,33 @@ function LoginForm() {
       {/* Left: Form */}
       <div className="flex-1 flex items-center justify-center px-4 py-24 sm:px-8">
         <div className="w-full max-w-md">
-          <Link href="/" className="flex items-center gap-2 mb-10">
-            <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}>
-              <span className="text-white font-bold text-sm">L</span>
+          <Link href="/" className="flex items-center gap-2.5 mb-10">
+            <svg width="34" height="34" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="cr-lg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stopColor="#E8C870" /><stop offset="50%" stopColor="#C8A84A" /><stop offset="100%" stopColor="#A07830" />
+                </linearGradient>
+                <linearGradient id="cr-bgn" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stopColor="#245035" /><stop offset="100%" stopColor="#1A3828" />
+                </linearGradient>
+              </defs>
+              <rect width="36" height="36" rx="6" fill="url(#cr-bgn)" />
+              <polyline points="18,4 31,14 31,13" stroke="url(#cr-lg)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+              <polyline points="18,4 5,14 5,13" stroke="url(#cr-lg)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+              <line x1="5" y1="14" x2="31" y2="14" stroke="url(#cr-lg)" strokeWidth="2" strokeLinecap="round" />
+              <text x="18" y="29" textAnchor="middle" fill="url(#cr-lg)" fontSize="11" fontWeight="700" fontFamily="serif" letterSpacing="1">CR</text>
+            </svg>
+            <div className="flex flex-col leading-none">
+              <span className="font-brand text-[15px] font-bold" style={{ color: '#1A3828', letterSpacing: '0.12em' }}>
+                CHICS<span style={{ color: '#C8A84A' }}>RETREAT</span>
+              </span>
+              <span className="text-[9px] uppercase font-medium" style={{ color: '#A07830', letterSpacing: '0.15em' }}>
+                Luxury · Comfort · Everything
+              </span>
             </div>
-            <span className="text-xl font-bold font-heading" style={{ color: '#0A1F44' }}>
-              Luxe<span style={{ color: '#C9A96E' }}>Estates</span>
-            </span>
           </Link>
 
-          <h1 className="text-3xl font-bold font-heading mb-2" style={{ color: '#0A1F44' }}>Welcome back</h1>
+          <h1 className="text-3xl font-bold font-heading mb-2" style={{ color: '#1A3828' }}>Welcome back</h1>
           <p className="text-gray-500 text-sm mb-8">Sign in to access your saved properties and dashboard.</p>
 
           {error && (
@@ -77,7 +94,7 @@ function LoginForm() {
             <div>
               <div className="flex items-center justify-between mb-1.5">
                 <label htmlFor="login-password" className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Password</label>
-                <Link href="#" className="text-xs hover:underline" style={{ color: '#C9A96E' }}>Forgot password?</Link>
+                <Link href="#" className="text-xs hover:underline" style={{ color: '#C8A84A' }}>Forgot password?</Link>
               </div>
               <div className="relative">
                 <Lock size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" aria-hidden="true" />
@@ -105,7 +122,7 @@ function LoginForm() {
               type="submit"
               disabled={loading}
               className="w-full py-3.5 rounded-xl text-sm font-semibold text-white flex items-center justify-center gap-2 hover:opacity-90 transition-all disabled:opacity-60"
-              style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+              style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}
             >
               {loading
                 ? <div className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
@@ -142,7 +159,7 @@ function LoginForm() {
 
           <p className="text-center text-sm text-gray-500 mt-8">
             Don&apos;t have an account?{' '}
-            <Link href="/auth/signup" className="font-semibold hover:underline" style={{ color: '#C9A96E' }}>Create one</Link>
+            <Link href="/auth/signup" className="font-semibold hover:underline" style={{ color: '#C8A84A' }}>Create one</Link>
           </p>
 
           <div className="mt-6 p-4 rounded-2xl border border-amber-100 bg-amber-50 text-center">
@@ -161,7 +178,7 @@ function LoginForm() {
         <div className="absolute bottom-12 left-12 right-12">
           <blockquote className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
             <p className="text-white text-sm italic leading-relaxed mb-3">
-              &ldquo;LuxeEstates found us our dream home in Beverly Hills. The process was seamless and Alexandra was incredible throughout.&rdquo;
+              &ldquo;ChicsRetreat found us our dream home in Beverly Hills. The process was seamless and Alexandra was incredible throughout.&rdquo;
             </p>
             <p className="text-white/70 text-xs font-medium">— David Thompson, Beverly Hills</p>
           </blockquote>

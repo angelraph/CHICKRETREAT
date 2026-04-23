@@ -5,27 +5,27 @@ import Footer from '@/components/Footer';
 import Providers from '@/components/Providers';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://luxeestates.com'),
+  metadataBase: new URL('https://chicsretreat.com'),
   title: {
-    default: 'LuxeEstates | Premium Real Estate',
-    template: '%s | LuxeEstates',
+    default: 'ChicsRetreat | Premium Real Estate',
+    template: '%s | ChicsRetreat',
   },
   description:
-    "Discover the world's finest properties. LuxeEstates connects buyers, sellers, and renters with extraordinary homes through expert guidance and white-glove service.",
+    "Discover the world's finest properties. ChicsRetreat connects buyers, sellers, and renters with extraordinary homes through expert guidance and white-glove service.",
   keywords: ['luxury real estate', 'homes for sale', 'premium properties', 'real estate agent', 'luxury homes', 'buy rent property'],
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://luxeestates.com',
-    siteName: 'LuxeEstates',
-    title: 'LuxeEstates | Premium Real Estate',
-    description: "Discover the world's finest luxury properties with LuxeEstates.",
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'LuxeEstates Premium Real Estate' }],
+    url: 'https://chicsretreat.com',
+    siteName: 'ChicsRetreat',
+    title: 'ChicsRetreat | Premium Real Estate',
+    description: "Discover the world's finest luxury properties with ChicsRetreat.",
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'ChicsRetreat Premium Real Estate' }],
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@luxeestates',
-    title: 'LuxeEstates | Premium Real Estate',
+    site: '@chicsretreat',
+    title: 'ChicsRetreat | Premium Real Estate',
     description: "Discover the world's finest luxury properties.",
     images: ['/og-image.jpg'],
   },
@@ -43,7 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-semibold focus:text-white"
-          style={{ background: '#C9A96E' }}
+          style={{ background: '#C8A84A' }}
         >
           Skip to content
         </a>

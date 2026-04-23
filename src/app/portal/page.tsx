@@ -51,15 +51,15 @@ export default function PortalPage() {
   const [requestSent, setRequestSent] = useState(false);
 
   return (
-    <div className="min-h-screen pt-20" style={{ backgroundColor: '#FAF7F2' }}>
+    <div className="min-h-screen pt-20" style={{ backgroundColor: '#F5F0E8' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         {/* Header */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-widest mb-1" style={{ color: '#C9A96E' }}>
+            <p className="text-sm font-semibold uppercase tracking-widest mb-1" style={{ color: '#C8A84A' }}>
               Resident Portal
             </p>
-            <h1 className="text-2xl sm:text-3xl font-bold font-heading" style={{ color: '#0A1F44' }}>
+            <h1 className="text-2xl sm:text-3xl font-bold font-heading" style={{ color: '#1A3828' }}>
               Welcome, James
             </h1>
           </div>
@@ -68,7 +68,7 @@ export default function PortalPage() {
               <Bell size={18} />
               <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-red-500 text-white text-xs flex items-center justify-center font-bold">2</span>
             </button>
-            <div className="w-9 h-9 rounded-xl flex items-center justify-center text-white text-sm font-bold" style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}>
+            <div className="w-9 h-9 rounded-xl flex items-center justify-center text-white text-sm font-bold" style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}>
               JW
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function PortalPage() {
                   onClick={() => setActiveSection(id)}
                   className="w-full flex items-center gap-3 px-5 py-4 text-sm font-medium transition-all border-b border-gray-50 last:border-0"
                   style={activeSection === id
-                    ? { background: '#fffbf5', color: '#C9A96E', borderLeft: '3px solid #C9A96E' }
+                    ? { background: '#fffbf5', color: '#C8A84A', borderLeft: '3px solid #C8A84A' }
                     : { color: '#374151' }
                   }
                 >
@@ -135,7 +135,7 @@ export default function PortalPage() {
               <>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                   {[
-                    { icon: DollarSign, label: 'Next Payment', value: 'May 1, 2025', sub: '$8,500 due', color: '#C9A96E' },
+                    { icon: DollarSign, label: 'Next Payment', value: 'May 1, 2025', sub: '$8,500 due', color: '#C8A84A' },
                     { icon: FileText, label: 'Active Lease', value: '7 months', sub: 'Until Nov 30, 2025', color: '#3b82f6' },
                     { icon: Wrench, label: 'Open Requests', value: '2 Active', sub: '1 urgent', color: '#ef4444' },
                   ].map(({ icon: Icon, label, value, sub, color }) => (
@@ -152,7 +152,7 @@ export default function PortalPage() {
 
                 {/* Recent Activity */}
                 <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
-                  <h3 className="font-bold font-heading mb-4" style={{ color: '#0A1F44' }}>Recent Activity</h3>
+                  <h3 className="font-bold font-heading mb-4" style={{ color: '#1A3828' }}>Recent Activity</h3>
                   <div className="space-y-3">
                     {[
                       { icon: CheckCircle2, color: 'text-green-500', text: 'April rent payment confirmed', time: '2 days ago' },
@@ -172,17 +172,17 @@ export default function PortalPage() {
                 {/* Lease Renewal Banner */}
                 <div
                   className="rounded-2xl p-6 text-white"
-                  style={{ background: 'linear-gradient(135deg, #0A1F44, #112a5a)' }}
+                  style={{ background: 'linear-gradient(135deg, #1A3828, #245035)' }}
                 >
                   <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                     <div>
-                      <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: '#C9A96E' }}>Action Required</p>
+                      <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: '#C8A84A' }}>Action Required</p>
                       <h3 className="text-lg font-bold font-heading mb-1">Your lease renews in 7 months</h3>
                       <p className="text-white/70 text-sm">Review your renewal offer and lock in your rate before Nov 30.</p>
                     </div>
                     <button
                       className="flex-shrink-0 px-6 py-3 rounded-xl text-sm font-semibold text-white hover:opacity-90 transition-all"
-                      style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+                      style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}
                     >
                       Review Offer
                     </button>
@@ -195,10 +195,10 @@ export default function PortalPage() {
             {activeSection === 'payments' && (
               <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
                 <div className="p-6 border-b border-gray-100 flex items-center justify-between">
-                  <h3 className="font-bold font-heading" style={{ color: '#0A1F44' }}>Payment History</h3>
+                  <h3 className="font-bold font-heading" style={{ color: '#1A3828' }}>Payment History</h3>
                   <button
                     className="flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-lg text-white"
-                    style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+                    style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}
                   >
                     Pay Now
                   </button>
@@ -227,7 +227,7 @@ export default function PortalPage() {
             {activeSection === 'documents' && (
               <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
                 <div className="p-6 border-b border-gray-100">
-                  <h3 className="font-bold font-heading" style={{ color: '#0A1F44' }}>Documents</h3>
+                  <h3 className="font-bold font-heading" style={{ color: '#1A3828' }}>Documents</h3>
                 </div>
                 <div className="divide-y divide-gray-50">
                   {[
@@ -245,7 +245,7 @@ export default function PortalPage() {
                         <div className="flex items-center gap-2">
                           <p className="font-medium text-sm text-gray-900">{doc.name}</p>
                           {doc.badge && (
-                            <span className="text-xs px-2 py-0.5 rounded-full font-semibold text-white" style={{ backgroundColor: '#C9A96E' }}>{doc.badge}</span>
+                            <span className="text-xs px-2 py-0.5 rounded-full font-semibold text-white" style={{ backgroundColor: '#C8A84A' }}>{doc.badge}</span>
                           )}
                         </div>
                         <p className="text-xs text-gray-400">{doc.date} · {doc.size}</p>
@@ -264,11 +264,11 @@ export default function PortalPage() {
               <>
                 <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
                   <div className="p-6 border-b border-gray-100 flex items-center justify-between">
-                    <h3 className="font-bold font-heading" style={{ color: '#0A1F44' }}>Maintenance Requests</h3>
+                    <h3 className="font-bold font-heading" style={{ color: '#1A3828' }}>Maintenance Requests</h3>
                     <button
                       onClick={() => setMaintenanceForm(true)}
                       className="text-sm font-semibold px-4 py-2 rounded-xl text-white hover:opacity-90"
-                      style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+                      style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}
                     >
                       + New Request
                     </button>
@@ -305,7 +305,7 @@ export default function PortalPage() {
                 {/* New Request Form */}
                 {maintenanceForm && (
                   <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
-                    <h3 className="font-bold font-heading mb-4" style={{ color: '#0A1F44' }}>Submit a Request</h3>
+                    <h3 className="font-bold font-heading mb-4" style={{ color: '#1A3828' }}>Submit a Request</h3>
                     {requestSent ? (
                       <div className="text-center py-8">
                         <CheckCircle2 size={36} className="mx-auto text-green-500 mb-3" />
@@ -342,7 +342,7 @@ export default function PortalPage() {
                           <button
                             type="submit"
                             className="flex-1 py-3 rounded-xl text-sm font-semibold text-white hover:opacity-90"
-                            style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+                            style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}
                           >
                             Submit Request
                           </button>
@@ -365,7 +365,7 @@ export default function PortalPage() {
             {activeSection === 'messages' && (
               <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
                 <div className="p-6 border-b border-gray-100">
-                  <h3 className="font-bold font-heading" style={{ color: '#0A1F44' }}>Messages</h3>
+                  <h3 className="font-bold font-heading" style={{ color: '#1A3828' }}>Messages</h3>
                 </div>
                 <div className="divide-y divide-gray-50">
                   {[
@@ -376,7 +376,7 @@ export default function PortalPage() {
                     <div key={i} className={`flex items-start gap-4 px-6 py-4 cursor-pointer hover:bg-gray-50 transition-colors ${msg.unread ? 'bg-amber-50/30' : ''}`}>
                       <div
                         className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold text-white"
-                        style={{ background: 'linear-gradient(135deg, #0A1F44, #112a5a)' }}
+                        style={{ background: 'linear-gradient(135deg, #1A3828, #245035)' }}
                       >
                         {msg.avatar}
                       </div>
@@ -387,7 +387,7 @@ export default function PortalPage() {
                         </div>
                         <p className="text-xs text-gray-500 line-clamp-1">{msg.text}</p>
                       </div>
-                      {msg.unread && <div className="w-2 h-2 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: '#C9A96E' }} />}
+                      {msg.unread && <div className="w-2 h-2 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: '#C8A84A' }} />}
                     </div>
                   ))}
                 </div>
@@ -400,7 +400,7 @@ export default function PortalPage() {
                     />
                     <button
                       className="px-4 py-2.5 rounded-xl text-sm font-semibold text-white"
-                      style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+                      style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}
                     >
                       Send
                     </button>

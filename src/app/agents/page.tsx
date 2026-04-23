@@ -7,14 +7,14 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Our Agents',
-  description: 'Meet the luxury real estate specialists at LuxeEstates. Expert agents with decades of experience.',
+  description: 'Meet the luxury real estate specialists at ChicsRetreat. Expert agents with decades of experience.',
 };
 
 export default function AgentsPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <div className="relative pt-24 pb-16 overflow-hidden" style={{ backgroundColor: '#0A1F44' }}>
+      <div className="relative pt-24 pb-16 overflow-hidden" style={{ backgroundColor: '#1A3828' }}>
         <div className="absolute inset-0 opacity-10">
           <Image
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
@@ -25,8 +25,8 @@ export default function AgentsPage() {
           />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: '#C9A96E' }}>
-            The LuxeEstates Team
+          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: '#C8A84A' }}>
+            The ChicsRetreat Team
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold font-heading text-white mb-4">
             Meet Your Specialists
@@ -38,7 +38,7 @@ export default function AgentsPage() {
       </div>
 
       {/* Stats Bar */}
-      <div style={{ backgroundColor: '#FAF7F2' }}>
+      <div style={{ backgroundColor: '#F5F0E8' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
             {[
@@ -48,10 +48,10 @@ export default function AgentsPage() {
               { icon: Star, value: '4.9/5', label: 'Average Rating' },
             ].map(({ icon: Icon, value, label }) => (
               <div key={label} className="flex flex-col items-center gap-2">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#0A1F44' }}>
-                  <Icon size={18} style={{ color: '#C9A96E' }} />
+                <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#1A3828' }}>
+                  <Icon size={18} style={{ color: '#C8A84A' }} />
                 </div>
-                <p className="text-2xl font-bold font-heading" style={{ color: '#0A1F44' }}>{value}</p>
+                <p className="text-2xl font-bold font-heading" style={{ color: '#1A3828' }}>{value}</p>
                 <p className="text-xs text-gray-500">{label}</p>
               </div>
             ))}
@@ -86,8 +86,8 @@ export default function AgentsPage() {
                 <div className="flex-1 p-6">
                   <div className="flex items-start justify-between gap-3 mb-1">
                     <div>
-                      <h2 className="text-xl font-bold font-heading" style={{ color: '#0A1F44' }}>{agent.name}</h2>
-                      <p className="text-sm font-medium" style={{ color: '#C9A96E' }}>{agent.title}</p>
+                      <h2 className="text-xl font-bold font-heading" style={{ color: '#1A3828' }}>{agent.name}</h2>
+                      <p className="text-sm font-medium" style={{ color: '#C8A84A' }}>{agent.title}</p>
                     </div>
                     <div className="flex items-center gap-1 flex-shrink-0 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-100">
                       <Star size={13} className="fill-amber-400 text-amber-400" />
@@ -105,7 +105,7 @@ export default function AgentsPage() {
                       { label: 'Sold', value: `${agent.sold}+` },
                     ].map(({ label, value }) => (
                       <div key={label} className="text-center bg-gray-50 rounded-xl py-2 px-1">
-                        <p className="font-bold text-sm" style={{ color: '#0A1F44' }}>{value}</p>
+                        <p className="font-bold text-sm" style={{ color: '#1A3828' }}>{value}</p>
                         <p className="text-xs text-gray-400">{label}</p>
                       </div>
                     ))}
@@ -123,7 +123,7 @@ export default function AgentsPage() {
                     <a
                       href={`tel:${agent.phone}`}
                       className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-medium text-white transition-all hover:opacity-90"
-                      style={{ background: 'linear-gradient(135deg, #0A1F44, #112a5a)' }}
+                      style={{ background: 'linear-gradient(135deg, #1A3828, #245035)' }}
                     >
                       <Phone size={13} /> Call
                     </a>
@@ -159,10 +159,10 @@ export default function AgentsPage() {
       </div>
 
       {/* Join Team CTA */}
-      <div className="py-16" style={{ backgroundColor: '#FAF7F2' }}>
+      <div className="py-16" style={{ backgroundColor: '#F5F0E8' }}>
         <div className="max-w-2xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold font-heading mb-4" style={{ color: '#0A1F44' }}>
-            Join the LuxeEstates Team
+          <h2 className="text-3xl font-bold font-heading mb-4" style={{ color: '#1A3828' }}>
+            Join the ChicsRetreat Team
           </h2>
           <p className="text-gray-600 mb-8 leading-relaxed">
             Are you a top-performing agent looking to elevate your career? We offer unmatched resources, a global network, and a culture of excellence.
@@ -170,7 +170,7 @@ export default function AgentsPage() {
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-white font-semibold text-sm hover:opacity-90 transition-all"
-            style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+            style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}
           >
             Learn About Careers
           </Link>

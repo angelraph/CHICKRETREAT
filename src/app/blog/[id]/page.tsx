@@ -28,7 +28,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
     image: post.image,
     datePublished: post.date,
     author: { '@type': 'Person', name: post.author },
-    publisher: { '@type': 'Organization', name: 'LuxeEstates', url: 'https://luxeestates.com' },
+    publisher: { '@type': 'Organization', name: 'ChicsRetreat', url: 'https://chicsretreat.com' },
     keywords: post.tags.join(', '),
   };
 
@@ -39,9 +39,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
       <div className="relative pt-24 pb-0 overflow-hidden">
         <div className="relative h-72 sm:h-96">
           <Image src={post.image} alt={post.title} fill className="object-cover" priority quality={85} sizes="100vw" />
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(10,31,68,0.6), rgba(10,31,68,0.85))' }} />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(26,56,40,0.6), rgba(26,56,40,0.85))' }} />
           <div className="absolute inset-0 flex flex-col items-center justify-end pb-10 px-4">
-            <span className="text-xs font-semibold px-3 py-1.5 rounded-full text-white mb-4" style={{ backgroundColor: '#C9A96E' }}>
+            <span className="text-xs font-semibold px-3 py-1.5 rounded-full text-white mb-4" style={{ backgroundColor: '#C8A84A' }}>
               {post.category}
             </span>
             <h1 className="text-2xl sm:text-4xl font-bold font-heading text-white text-center max-w-3xl leading-tight">
@@ -81,20 +81,20 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
           className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6
             [&_h2]:text-xl [&_h2]:font-bold [&_h2]:font-heading [&_h2]:mt-8 [&_h2]:mb-4
             [&_p]:mb-4"
-          style={{ ['--tw-prose-headings' as string]: '#0A1F44' }}
+          style={{ ['--tw-prose-headings' as string]: '#1A3828' }}
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
         {/* Author Card */}
-        <div className="mt-12 pt-8 border-t border-gray-100 flex items-center gap-4 p-6 rounded-2xl" style={{ backgroundColor: '#FAF7F2' }}>
+        <div className="mt-12 pt-8 border-t border-gray-100 flex items-center gap-4 p-6 rounded-2xl" style={{ backgroundColor: '#F5F0E8' }}>
           <div className="w-14 h-14 rounded-full overflow-hidden flex-shrink-0 bg-gray-200 flex items-center justify-center">
             <User size={24} className="text-gray-400" />
           </div>
           <div>
             <p className="font-bold text-gray-900">{post.author}</p>
-            <p className="text-sm text-gray-500">Luxury Real Estate Specialist at LuxeEstates</p>
+            <p className="text-sm text-gray-500">Luxury Real Estate Specialist at ChicsRetreat</p>
           </div>
-          <Link href="/agents" className="ml-auto text-sm font-medium hover:underline flex-shrink-0" style={{ color: '#C9A96E' }}>
+          <Link href="/agents" className="ml-auto text-sm font-medium hover:underline flex-shrink-0" style={{ color: '#C8A84A' }}>
             View Profile
           </Link>
         </div>
@@ -102,7 +102,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
         {/* Related */}
         {related.length > 0 && (
           <div className="mt-16">
-            <h2 className="text-2xl font-bold font-heading mb-8" style={{ color: '#0A1F44' }}>Related Articles</h2>
+            <h2 className="text-2xl font-bold font-heading mb-8" style={{ color: '#1A3828' }}>Related Articles</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
               {related.map(p => (
                 <Link key={p.id} href={`/blog/${p.id}`} className="group block rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-all">

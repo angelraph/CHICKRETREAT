@@ -92,9 +92,9 @@ function PropertiesContent() {
   const hasActiveFilters = listingType !== 'all' || propertyType !== '' || minBeds > 0 || searchQuery !== '';
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#FAF7F2' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#F5F0E8' }}>
       {/* Page Header */}
-      <div className="pt-24 pb-10" style={{ backgroundColor: '#0A1F44' }}>
+      <div className="pt-24 pb-10" style={{ backgroundColor: '#1A3828' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl sm:text-4xl font-bold font-heading text-white mb-2">
             Property Listings
@@ -129,7 +129,7 @@ function PropertiesContent() {
                   onClick={() => setListingType(type)}
                   className="px-4 py-2.5 text-sm font-medium capitalize transition-all"
                   style={listingType === type
-                    ? { background: '#0A1F44', color: '#fff' }
+                    ? { background: '#1A3828', color: '#fff' }
                     : { background: '#f9fafb', color: '#6b7280' }
                   }
                 >
@@ -167,7 +167,7 @@ function PropertiesContent() {
             <button
               onClick={() => setFiltersOpen(!filtersOpen)}
               className="flex items-center gap-2 px-4 py-2.5 text-sm font-medium rounded-xl border border-gray-200 hover:border-amber-400 transition-all flex-shrink-0"
-              style={{ color: filtersOpen ? '#C9A96E' : '#374151' }}
+              style={{ color: filtersOpen ? '#C8A84A' : '#374151' }}
             >
               <SlidersHorizontal size={16} />
               Filters {hasActiveFilters && <span className="w-2 h-2 rounded-full bg-amber-500" />}
@@ -235,14 +235,14 @@ function PropertiesContent() {
               <button
                 onClick={() => setViewMode('grid')}
                 className="p-2 transition-colors"
-                style={viewMode === 'grid' ? { background: '#0A1F44', color: '#fff' } : { color: '#6b7280' }}
+                style={viewMode === 'grid' ? { background: '#1A3828', color: '#fff' } : { color: '#6b7280' }}
               >
                 <Grid3X3 size={16} />
               </button>
               <button
                 onClick={() => setViewMode('list')}
                 className="p-2 transition-colors"
-                style={viewMode === 'list' ? { background: '#0A1F44', color: '#fff' } : { color: '#6b7280' }}
+                style={viewMode === 'list' ? { background: '#1A3828', color: '#fff' } : { color: '#6b7280' }}
               >
                 <List size={16} />
               </button>

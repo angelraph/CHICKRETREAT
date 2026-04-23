@@ -10,7 +10,7 @@ const offices = [
     address: '150 Park Avenue, Suite 2800',
     state: 'New York, NY 10022',
     phone: '+1 (212) 555-0100',
-    email: 'ny@luxeestates.com',
+    email: 'ny@chicsretreat.com',
     image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=600&q=80',
   },
   {
@@ -18,7 +18,7 @@ const offices = [
     address: '9200 Wilshire Blvd, Suite 400',
     state: 'Beverly Hills, CA 90212',
     phone: '+1 (310) 555-0200',
-    email: 'la@luxeestates.com',
+    email: 'la@chicsretreat.com',
     image: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=600&q=80',
   },
   {
@@ -26,7 +26,7 @@ const offices = [
     address: '1000 Brickell Avenue, Suite 850',
     state: 'Miami, FL 33131',
     phone: '+1 (305) 555-0300',
-    email: 'miami@luxeestates.com',
+    email: 'miami@chicsretreat.com',
     image: 'https://images.unsplash.com/photo-1506966953602-c20cc11f75e3?w=600&q=80',
   },
 ];
@@ -79,7 +79,7 @@ export default function ContactForm() {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
       {/* Left: Form */}
       <div>
-        <h2 className="text-2xl font-bold font-heading mb-2" style={{ color: '#0A1F44' }}>Send Us a Message</h2>
+        <h2 className="text-2xl font-bold font-heading mb-2" style={{ color: '#1A3828' }}>Send Us a Message</h2>
         <p className="text-gray-500 text-sm mb-8">We typically respond within 2 hours during business hours.</p>
 
         {submitted ? (
@@ -183,7 +183,7 @@ export default function ContactForm() {
               type="submit"
               disabled={submitting}
               className="w-full py-4 rounded-xl text-sm font-semibold text-white hover:opacity-90 transition-all disabled:opacity-60"
-              style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+              style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}
             >
               {submitting ? 'Sending…' : 'Send Message'}
             </button>
@@ -212,13 +212,13 @@ export default function ContactForm() {
       <div>
         <div className="grid grid-cols-1 gap-5 mb-8">
           {[
-            { icon: Phone, title: 'Phone', lines: ['+1 (800) 555-LUXE', 'Mon–Sat 8AM–8PM EST'] },
-            { icon: Mail, title: 'Email', lines: ['hello@luxeestates.com', 'We reply within 2 hours'] },
+            { icon: Phone, title: 'Phone', lines: ['+234 (0) 800 CHICS', 'Mon–Sat 8AM–8PM EST'] },
+            { icon: Mail, title: 'Email', lines: ['chicsretreat@gmail.com', 'We reply within 2 hours'] },
             { icon: Clock, title: 'Office Hours', lines: ['Monday–Friday: 8AM–8PM', 'Saturday: 9AM–6PM EST'] },
           ].map(({ icon: Icon, title, lines }) => (
             <div key={title} className="flex items-start gap-4 p-5 rounded-2xl border border-gray-100">
-              <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'linear-gradient(135deg, #0A1F44, #112a5a)' }}>
-                <Icon size={18} style={{ color: '#C9A96E' }} aria-hidden="true" />
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'linear-gradient(135deg, #1A3828, #245035)' }}>
+                <Icon size={18} style={{ color: '#C8A84A' }} aria-hidden="true" />
               </div>
               <div>
                 <p className="font-semibold text-gray-900 text-sm mb-0.5">{title}</p>
@@ -230,7 +230,7 @@ export default function ContactForm() {
           ))}
         </div>
 
-        <h3 className="font-bold text-lg font-heading mb-4" style={{ color: '#0A1F44' }}>Our Offices</h3>
+        <h3 className="font-bold text-lg font-heading mb-4" style={{ color: '#1A3828' }}>Our Offices</h3>
         <div className="space-y-4">
           {offices.map(office => (
             <div key={office.city} className="flex gap-4 p-4 rounded-2xl border border-gray-100 hover:shadow-md transition-all">
@@ -241,7 +241,7 @@ export default function ContactForm() {
                 <p className="font-semibold text-gray-900 text-sm">{office.city}</p>
                 <p className="text-xs text-gray-500">{office.address}</p>
                 <p className="text-xs text-gray-500">{office.state}</p>
-                <p className="text-xs mt-1" style={{ color: '#C9A96E' }}>{office.phone}</p>
+                <p className="text-xs mt-1" style={{ color: '#C8A84A' }}>{office.phone}</p>
               </address>
             </div>
           ))}

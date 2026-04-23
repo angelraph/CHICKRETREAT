@@ -325,7 +325,7 @@ export const agents: Agent[] = [
     title: 'Luxury Property Specialist',
     photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
     phone: '+1 (310) 555-0191',
-    email: 'alexandra@luxeestates.com',
+    email: 'chicsretreat@gmail.com',
     bio: 'With over 15 years of experience in luxury real estate, Alexandra has closed more than $500M in transactions across Los Angeles, Beverly Hills, and Malibu. Her deep market expertise and white-glove service have earned her a reputation as one of the most trusted names in California luxury real estate.',
     experience: 15,
     listings: 42,
@@ -341,7 +341,7 @@ export const agents: Agent[] = [
     title: 'Senior Real Estate Advisor',
     photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80',
     phone: '+1 (212) 555-0134',
-    email: 'marcus@luxeestates.com',
+    email: 'chicsretreat@gmail.com',
     bio: 'Marcus brings a unique perspective combining Wall Street financial acumen with deep real estate expertise. Specializing in New York City and the Hamptons, he has advised Fortune 500 executives, celebrities, and international investors on their most important real estate decisions.',
     experience: 12,
     listings: 38,
@@ -357,7 +357,7 @@ export const agents: Agent[] = [
     title: 'Residential & Luxury Rentals',
     photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80',
     phone: '+1 (305) 555-0278',
-    email: 'sofia@luxeestates.com',
+    email: 'chicsretreat@gmail.com',
     bio: 'Sofia is Miami\'s go-to specialist for luxury waterfront properties and high-end rentals. Born and raised in Miami, she has an intimate knowledge of every neighborhood and building in the city. Her bilingual expertise and international network make her uniquely positioned to serve both domestic and global clients.',
     experience: 10,
     listings: 55,
@@ -373,7 +373,7 @@ export const agents: Agent[] = [
     title: 'Estate & Development Expert',
     photo: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&q=80',
     phone: '+1 (415) 555-0356',
-    email: 'james@luxeestates.com',
+    email: 'chicsretreat@gmail.com',
     bio: 'James has spent two decades helping clients navigate San Francisco\'s competitive and nuanced real estate market. His background in architecture gives him an eye for quality that clients trust implicitly. James has been named SF\'s Top Agent five years running by the San Francisco Business Times.',
     experience: 20,
     listings: 29,
@@ -446,7 +446,7 @@ export const blogPosts: BlogPost[] = [
 <p>Sun Belt markets that surged during the pandemic era have undergone a healthy correction. Austin, Phoenix, and Nashville saw double-digit price growth followed by retrenchment — and are now attractively priced relative to their long-term fundamentals. Remote work normalization means buyers are no longer choosing between career and lifestyle.</p>
 <p>Meanwhile, New York and California markets are seeing a quiet resurgence of interest from buyers who left during the pandemic and have been priced out of the markets they moved to. The appeal of world-class culture, walkability, and professional infrastructure is proving durable.</p>
 <h2>What Sophisticated Buyers Are Doing Right Now</h2>
-<p>The buyers we're advising at LuxeEstates are taking a portfolio approach to real estate. Rather than concentrating capital in a single property, many are diversifying across markets — pairing a primary residence with a rental income property in a high-yield market like Miami or a vacation property in a mountain or coastal destination.</p>
+<p>The buyers we're advising at ChicsRetreat are taking a portfolio approach to real estate. Rather than concentrating capital in a single property, many are diversifying across markets — pairing a primary residence with a rental income property in a high-yield market like Miami or a vacation property in a mountain or coastal destination.</p>
 <p>Whatever your strategy, the consistent advice from our team is this: work with an agent who has genuine market relationships. In the luxury segment, the best opportunities never reach the open market. They're transacted quietly between agents who trust each other and whose clients' needs align. That network is the most valuable asset we offer.</p>`,
     image: 'https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800&q=80',
     category: 'Market Trends',

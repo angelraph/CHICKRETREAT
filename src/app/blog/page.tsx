@@ -34,9 +34,9 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <div className="relative pt-24 pb-16" style={{ backgroundColor: '#0A1F44' }}>
+      <div className="relative pt-24 pb-16" style={{ backgroundColor: '#1A3828' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: '#C9A96E' }}>
+          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: '#C8A84A' }}>
             Insights & Resources
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold font-heading text-white mb-4">
@@ -57,7 +57,7 @@ export default function BlogPage() {
               onClick={() => setActiveCategory(cat)}
               className="px-4 py-2 text-sm font-medium rounded-full border transition-all"
               style={activeCategory === cat
-                ? { background: '#0A1F44', color: '#fff', borderColor: '#0A1F44' }
+                ? { background: '#1A3828', color: '#fff', borderColor: '#1A3828' }
                 : { background: '#fff', color: '#6b7280', borderColor: '#e5e7eb' }
               }
             >
@@ -79,16 +79,16 @@ export default function BlogPage() {
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute top-4 left-4">
-                <span className="text-xs font-semibold px-3 py-1.5 rounded-full text-white" style={{ backgroundColor: '#C9A96E' }}>
+                <span className="text-xs font-semibold px-3 py-1.5 rounded-full text-white" style={{ backgroundColor: '#C8A84A' }}>
                   Featured
                 </span>
               </div>
             </div>
-            <div className="p-8 sm:p-10 flex flex-col justify-center" style={{ backgroundColor: '#FAF7F2' }}>
-              <span className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#C9A96E' }}>
+            <div className="p-8 sm:p-10 flex flex-col justify-center" style={{ backgroundColor: '#F5F0E8' }}>
+              <span className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#C8A84A' }}>
                 {featured.category}
               </span>
-              <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-4 group-hover:text-amber-700 transition-colors" style={{ color: '#0A1F44' }}>
+              <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-4 group-hover:text-amber-700 transition-colors" style={{ color: '#1A3828' }}>
                 {featured.title}
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">{featured.excerpt}</p>
@@ -97,7 +97,7 @@ export default function BlogPage() {
                 <span className="flex items-center gap-1.5"><Clock size={14} />{featured.readTime} min read</span>
                 <span>{featured.date}</span>
               </div>
-              <div className="mt-6 flex items-center gap-1.5 font-semibold text-sm group-hover:gap-2.5 transition-all" style={{ color: '#C9A96E' }}>
+              <div className="mt-6 flex items-center gap-1.5 font-semibold text-sm group-hover:gap-2.5 transition-all" style={{ color: '#C8A84A' }}>
                 Read Article <ArrowRight size={15} />
               </div>
             </div>
@@ -118,7 +118,7 @@ export default function BlogPage() {
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-3 left-3">
-                  <span className="text-xs font-semibold px-2.5 py-1 rounded-full text-white" style={{ backgroundColor: '#C9A96E' }}>
+                  <span className="text-xs font-semibold px-2.5 py-1 rounded-full text-white" style={{ backgroundColor: '#C8A84A' }}>
                     {post.category}
                   </span>
                 </div>
@@ -145,7 +145,7 @@ export default function BlogPage() {
         </div>
 
         {/* Newsletter */}
-        <div className="mt-16 rounded-3xl p-10 text-center" style={{ background: 'linear-gradient(135deg, #0A1F44, #112a5a)' }}>
+        <div className="mt-16 rounded-3xl p-10 text-center" style={{ background: 'linear-gradient(135deg, #1A3828, #245035)' }}>
           <h2 className="text-2xl sm:text-3xl font-bold font-heading text-white mb-3">
             Never Miss a Market Insight
           </h2>
@@ -168,7 +168,7 @@ export default function BlogPage() {
                 type="submit"
                 disabled={subStatus === 'loading'}
                 className="px-5 py-3 rounded-xl text-sm font-semibold text-white flex-shrink-0 disabled:opacity-60"
-                style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+                style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}
               >
                 {subStatus === 'loading' ? 'Subscribing…' : 'Subscribe'}
               </button>

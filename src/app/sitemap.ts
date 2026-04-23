@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { properties, blogPosts } from '@/lib/data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://luxeestates.com';
+  const base = 'https://chicsretreat.com';
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: base, lastModified: new Date(), changeFrequency: 'daily', priority: 1 },

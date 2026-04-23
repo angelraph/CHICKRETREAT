@@ -74,7 +74,7 @@ export default function HomePage() {
           />
           <div
             className="absolute inset-0"
-            style={{ background: 'linear-gradient(to bottom, rgba(10,31,68,0.65) 0%, rgba(10,31,68,0.5) 50%, rgba(10,31,68,0.85) 100%)' }}
+            style={{ background: 'linear-gradient(to bottom, rgba(26,56,40,0.65) 0%, rgba(26,56,40,0.5) 50%, rgba(26,56,40,0.85) 100%)' }}
           />
         </div>
 
@@ -84,15 +84,15 @@ export default function HomePage() {
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-medium mb-6 text-white/90 border border-white/20 backdrop-blur-sm"
               style={{ background: 'rgba(255,255,255,0.08)' }}
             >
-              <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ backgroundColor: '#C9A96E' }} />
+              <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ backgroundColor: '#C8A84A' }} />
               340+ Premium Listings Available
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 font-heading">
-              Find Your Perfect{' '}
-              <span style={{ color: '#C9A96E' }}>Luxury Home</span>
+              Find Your{' '}
+              <span style={{ color: '#C8A84A' }}>Luxury Retreat</span>
             </h1>
             <p className="text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
-              Discover extraordinary properties curated by the world&apos;s most trusted luxury real estate specialists.
+              Luxury, comfort, and everything in between. Discover extraordinary properties curated by Nigeria&apos;s most trusted real estate specialists.
             </p>
           </div>
 
@@ -107,7 +107,7 @@ export default function HomePage() {
                     className="flex-1 py-3.5 text-sm font-semibold transition-all"
                     style={
                       listingType === type
-                        ? { background: 'linear-gradient(135deg, #0A1F44, #112a5a)', color: '#fff' }
+                        ? { background: 'linear-gradient(135deg, #1A3828, #245035)', color: '#fff' }
                         : { background: '#f9fafb', color: '#6b7280' }
                     }
                   >
@@ -131,7 +131,7 @@ export default function HomePage() {
                   <button
                     type="submit"
                     className="flex items-center justify-center gap-2 px-8 py-3 rounded-xl text-white font-semibold text-sm hover:opacity-90 transition-all hover:shadow-lg"
-                    style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)', minWidth: '140px' }}
+                    style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)', minWidth: '140px' }}
                   >
                     <Search size={16} />
                     Search
@@ -180,12 +180,12 @@ export default function HomePage() {
       </section>
 
       {/* STATS BAR */}
-      <section style={{ backgroundColor: '#0A1F44' }}>
+      <section style={{ backgroundColor: '#1A3828' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map(({ value, label }) => (
               <div key={label} className="text-center">
-                <p className="text-3xl font-bold font-heading mb-1" style={{ color: '#C9A96E' }}>{value}</p>
+                <p className="text-3xl font-bold font-heading mb-1" style={{ color: '#C8A84A' }}>{value}</p>
                 <p className="text-sm text-white/60">{label}</p>
               </div>
             ))}
@@ -198,17 +198,17 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-12">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: '#C9A96E' }}>
+              <p className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: '#C8A84A' }}>
                 Hand-Picked Selection
               </p>
-              <h2 className="text-3xl sm:text-4xl font-bold font-heading" style={{ color: '#0A1F44' }}>
+              <h2 className="text-3xl sm:text-4xl font-bold font-heading" style={{ color: '#1A3828' }}>
                 Featured Properties
               </h2>
             </div>
             <Link
               href="/properties"
               className="hidden sm:flex items-center gap-1.5 text-sm font-semibold hover:gap-2.5 transition-all"
-              style={{ color: '#C9A96E' }}
+              style={{ color: '#C8A84A' }}
             >
               View All <ArrowRight size={16} />
             </Link>
@@ -224,7 +224,7 @@ export default function HomePage() {
             <Link
               href="/properties"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white"
-              style={{ background: 'linear-gradient(135deg, #0A1F44, #112a5a)' }}
+              style={{ background: 'linear-gradient(135deg, #1A3828, #245035)' }}
             >
               Browse All Properties <ArrowRight size={16} />
             </Link>
@@ -233,13 +233,13 @@ export default function HomePage() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-20" style={{ backgroundColor: '#FAF7F2' }}>
+      <section className="py-20" style={{ backgroundColor: '#F5F0E8' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: '#C9A96E' }}>
+            <p className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: '#C8A84A' }}>
               Simple Process
             </p>
-            <h2 className="text-3xl sm:text-4xl font-bold font-heading" style={{ color: '#0A1F44' }}>
+            <h2 className="text-3xl sm:text-4xl font-bold font-heading" style={{ color: '#1A3828' }}>
               Your Journey Starts Here
             </h2>
           </div>
@@ -247,7 +247,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
             <div
               className="hidden md:block absolute top-10 left-1/3 right-1/3 h-px"
-              style={{ background: 'linear-gradient(90deg, transparent, #C9A96E, transparent)' }}
+              style={{ background: 'linear-gradient(90deg, transparent, #C8A84A, transparent)' }}
             />
             {[
               {
@@ -266,14 +266,14 @@ export default function HomePage() {
               <div key={step} className="relative text-center group">
                 <div
                   className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg"
-                  style={{ background: 'linear-gradient(135deg, #0A1F44, #112a5a)' }}
+                  style={{ background: 'linear-gradient(135deg, #1A3828, #245035)' }}
                 >
-                  <Icon size={28} style={{ color: '#C9A96E' }} />
+                  <Icon size={28} style={{ color: '#C8A84A' }} />
                 </div>
-                <div className="absolute -top-2 left-1/2 -translate-x-1/2 text-xs font-bold tracking-widest" style={{ color: '#C9A96E' }}>
+                <div className="absolute -top-2 left-1/2 -translate-x-1/2 text-xs font-bold tracking-widest" style={{ color: '#C8A84A' }}>
                   {step}
                 </div>
-                <h3 className="text-xl font-bold mb-3 font-heading" style={{ color: '#0A1F44' }}>{title}</h3>
+                <h3 className="text-xl font-bold mb-3 font-heading" style={{ color: '#1A3828' }}>{title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed max-w-xs mx-auto">{desc}</p>
               </div>
             ))}
@@ -306,7 +306,7 @@ export default function HomePage() {
               </div>
               <div
                 className="absolute -bottom-4 right-4 rounded-2xl p-5 shadow-xl text-white z-10"
-                style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+                style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}
               >
                 <p className="text-3xl font-bold font-heading">15+</p>
                 <p className="text-sm font-medium text-white/80">Years of Excellence</p>
@@ -314,10 +314,10 @@ export default function HomePage() {
             </div>
 
             <div className="lg:pl-8">
-              <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: '#C9A96E' }}>
-                Why LuxeEstates
+              <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: '#C8A84A' }}>
+                Why ChicsRetreat
               </p>
-              <h2 className="text-3xl sm:text-4xl font-bold font-heading mb-5" style={{ color: '#0A1F44' }}>
+              <h2 className="text-3xl sm:text-4xl font-bold font-heading mb-5" style={{ color: '#1A3828' }}>
                 A Different Standard of Service
               </h2>
               <p className="text-gray-600 leading-relaxed mb-8">
@@ -330,8 +330,8 @@ export default function HomePage() {
                   { icon: Award, title: 'Award-Winning Team', desc: 'Recognized as the top luxury brokerage five years running.' },
                 ].map(({ icon: Icon, title, desc }) => (
                   <div key={title} className="flex items-start gap-4">
-                    <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#FAF7F2' }}>
-                      <Icon size={20} style={{ color: '#C9A96E' }} />
+                    <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#F5F0E8' }}>
+                      <Icon size={20} style={{ color: '#C8A84A' }} />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-0.5">{title}</h4>
@@ -343,7 +343,7 @@ export default function HomePage() {
               <Link
                 href="/about"
                 className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white transition-all hover:opacity-90"
-                style={{ background: 'linear-gradient(135deg, #0A1F44, #112a5a)' }}
+                style={{ background: 'linear-gradient(135deg, #1A3828, #245035)' }}
               >
                 Learn Our Story <ArrowRight size={16} />
               </Link>
@@ -353,18 +353,18 @@ export default function HomePage() {
       </section>
 
       {/* AGENTS */}
-      <section className="py-20" style={{ backgroundColor: '#FAF7F2' }}>
+      <section className="py-20" style={{ backgroundColor: '#F5F0E8' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-12">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: '#C9A96E' }}>
+              <p className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: '#C8A84A' }}>
                 Expert Guidance
               </p>
-              <h2 className="text-3xl sm:text-4xl font-bold font-heading" style={{ color: '#0A1F44' }}>
+              <h2 className="text-3xl sm:text-4xl font-bold font-heading" style={{ color: '#1A3828' }}>
                 Meet Our Specialists
               </h2>
             </div>
-            <Link href="/agents" className="hidden sm:flex items-center gap-1.5 text-sm font-semibold hover:gap-2.5 transition-all" style={{ color: '#C9A96E' }}>
+            <Link href="/agents" className="hidden sm:flex items-center gap-1.5 text-sm font-semibold hover:gap-2.5 transition-all" style={{ color: '#C8A84A' }}>
               All Agents <ArrowRight size={16} />
             </Link>
           </div>
@@ -413,10 +413,10 @@ export default function HomePage() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="py-20" style={{ backgroundColor: '#0A1F44' }}>
+      <section className="py-20" style={{ backgroundColor: '#1A3828' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: '#C9A96E' }}>
+            <p className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: '#C8A84A' }}>
               Client Stories
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold font-heading text-white">
@@ -460,14 +460,14 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-12">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: '#C9A96E' }}>
+              <p className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: '#C8A84A' }}>
                 Market Insights
               </p>
-              <h2 className="text-3xl sm:text-4xl font-bold font-heading" style={{ color: '#0A1F44' }}>
+              <h2 className="text-3xl sm:text-4xl font-bold font-heading" style={{ color: '#1A3828' }}>
                 From Our Blog
               </h2>
             </div>
-            <Link href="/blog" className="hidden sm:flex items-center gap-1.5 text-sm font-semibold hover:gap-2.5 transition-all" style={{ color: '#C9A96E' }}>
+            <Link href="/blog" className="hidden sm:flex items-center gap-1.5 text-sm font-semibold hover:gap-2.5 transition-all" style={{ color: '#C8A84A' }}>
               All Articles <ArrowRight size={16} />
             </Link>
           </div>
@@ -485,7 +485,7 @@ export default function HomePage() {
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-3 left-3">
-                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full text-white" style={{ backgroundColor: '#C9A96E' }}>
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full text-white" style={{ backgroundColor: '#C8A84A' }}>
                       {post.category}
                     </span>
                   </div>
@@ -517,10 +517,10 @@ export default function HomePage() {
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0" style={{ background: 'rgba(10,31,68,0.88)' }} />
+          <div className="absolute inset-0" style={{ background: 'rgba(26,56,40,0.88)' }} />
         </div>
         <div className="relative z-10 max-w-2xl mx-auto px-4 text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: '#C9A96E' }}>
+          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: '#C8A84A' }}>
             Stay Ahead of the Market
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold font-heading text-white mb-4">
@@ -546,7 +546,7 @@ export default function HomePage() {
                 type="submit"
                 disabled={subStatus === 'loading'}
                 className="px-6 py-3.5 rounded-xl text-sm font-semibold text-white flex-shrink-0 hover:opacity-90 transition-all disabled:opacity-60"
-                style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+                style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}
               >
                 {subStatus === 'loading' ? 'Subscribing…' : 'Subscribe'}
               </button>

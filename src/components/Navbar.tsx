@@ -14,6 +14,29 @@ const navLinks = [
   { label: 'About', href: '/about' },
 ];
 
+function CRMonogram({ size = 36 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 36 36" fill="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="cr-gold" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#E8C870" />
+          <stop offset="50%" stopColor="#C8A84A" />
+          <stop offset="100%" stopColor="#A07830" />
+        </linearGradient>
+        <linearGradient id="cr-bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#245035" />
+          <stop offset="100%" stopColor="#1A3828" />
+        </linearGradient>
+      </defs>
+      <rect width="36" height="36" rx="6" fill="url(#cr-bg)" />
+      <polyline points="18,4 31,14 31,13" stroke="url(#cr-gold)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+      <polyline points="18,4 5,14 5,13" stroke="url(#cr-gold)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+      <line x1="5" y1="14" x2="31" y2="14" stroke="url(#cr-gold)" strokeWidth="2" strokeLinecap="round" />
+      <text x="18" y="29" textAnchor="middle" fill="url(#cr-gold)" fontSize="11" fontWeight="700" fontFamily="serif" letterSpacing="1">CR</text>
+    </svg>
+  );
+}
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -29,7 +52,6 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close user menu on outside click
   useEffect(() => {
     if (!userMenuOpen) return;
     const close = () => setUserMenuOpen(false);
@@ -48,17 +70,30 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between" style={{ height: '72px' }}>
+
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}>
-              <span className="text-white font-bold text-sm" aria-hidden="true">L</span>
+          <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
+            <CRMonogram size={36} />
+            <div className="flex flex-col leading-none">
+              <span
+                className="font-brand text-[15px] font-bold transition-colors duration-300"
+                style={{
+                  color: transparent ? '#E8C870' : '#1A3828',
+                  letterSpacing: '0.12em',
+                }}
+              >
+                CHICS<span style={{ color: '#C8A84A' }}>RETREAT</span>
+              </span>
+              <span
+                className="text-[9px] font-medium uppercase transition-colors duration-300"
+                style={{
+                  color: transparent ? 'rgba(255,255,255,0.5)' : '#A07830',
+                  letterSpacing: '0.18em',
+                }}
+              >
+                Luxury · Comfort · Everything
+              </span>
             </div>
-            <span
-              className="text-xl font-bold tracking-tight font-heading transition-colors duration-300"
-              style={{ color: transparent ? '#fff' : '#0A1F44' }}
-            >
-              Luxe<span style={{ color: '#C9A96E' }}>Estates</span>
-            </span>
           </Link>
 
           {/* Desktop Nav */}
@@ -82,7 +117,7 @@ export default function Navbar() {
               className={`flex items-center gap-1.5 text-sm font-medium transition-colors ${textColor}`}
             >
               <Phone size={15} aria-hidden="true" />
-              <span>+1 (800) 555-LUXE</span>
+              <span>+234 (0) 800 CHICS</span>
             </Link>
             <div className="w-px h-5 bg-gray-300 mx-1" aria-hidden="true" />
 
@@ -94,14 +129,14 @@ export default function Navbar() {
                   aria-haspopup="true"
                   aria-expanded={userMenuOpen}
                 >
-                  <div className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white" style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}>
+                  <div className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white" style={{ background: 'linear-gradient(135deg, #C8A84A, #A07830)' }}>
                     {session.user?.name?.[0]?.toUpperCase() ?? 'U'}
                   </div>
                   <span className="max-w-[80px] truncate">{session.user?.name?.split(' ')[0]}</span>
                   <ChevronDown size={14} aria-hidden="true" />
                 </button>
                 {userMenuOpen && (
-                  <div className="absolute right-0 top-full mt-2 w-44 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-50">
+                  <div className="absolute right-0 top-full mt-2 w-48 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-50">
                     <Link href="/dashboard" className="flex items-center gap-2.5 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
                       <LayoutDashboard size={15} aria-hidden="true" /> Dashboard
                     </Link>
@@ -127,8 +162,7 @@ export default function Navbar() {
                 </Link>
                 <Link
                   href="/auth/signup"
-                  className="text-sm font-semibold px-4 py-2 rounded-lg text-white transition-all hover:opacity-90 hover:shadow-md"
-                  style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+                  className="btn-gold text-sm font-semibold px-4 py-2 rounded-lg text-white transition-all"
                 >
                   Get Started
                 </Link>
@@ -158,7 +192,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="block text-base font-medium text-gray-700 hover:text-amber-600 py-2 border-b border-gray-100 last:border-0"
+                className="block text-base font-medium text-gray-700 py-2 border-b border-gray-100 last:border-0"
               >
                 {link.label}
               </Link>
@@ -178,7 +212,7 @@ export default function Navbar() {
                   <Link href="/auth/login" onClick={() => setMobileOpen(false)} className="w-full text-center py-3 border border-gray-300 rounded-xl text-sm font-medium text-gray-700">
                     Sign In
                   </Link>
-                  <Link href="/auth/signup" onClick={() => setMobileOpen(false)} className="w-full text-center py-3 rounded-xl text-sm font-semibold text-white" style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}>
+                  <Link href="/auth/signup" onClick={() => setMobileOpen(false)} className="btn-gold w-full text-center py-3 rounded-xl text-sm font-semibold text-white">
                     Get Started
                   </Link>
                 </>
