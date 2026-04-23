@@ -73,122 +73,122 @@ export interface BlogPost {
 export const properties: Property[] = [
   {
     id: '1',
-    title: 'Oceanfront Modern Villa',
-    address: '2847 Coastal Highway',
-    city: 'Malibu',
-    state: 'CA',
-    zip: '90265',
-    price: 4850000,
+    title: 'Bongo Residential Estate',
+    address: 'Bongo Layout, Bwari Area Council',
+    city: 'Abuja',
+    state: 'FCT',
+    zip: '901101',
+    price: 50000000,
     listingType: 'buy',
-    propertyType: 'villa',
-    bedrooms: 5,
-    bathrooms: 6,
-    sqft: 6200,
-    yearBuilt: 2021,
-    description: 'A breathtaking oceanfront masterpiece designed by award-winning architects. This contemporary villa features floor-to-ceiling windows, an infinity pool overlooking the Pacific, and bespoke finishes throughout. The open-plan living spaces seamlessly blend indoor and outdoor living with retractable glass walls opening to expansive terraces.',
+    propertyType: 'house',
+    bedrooms: 4,
+    bathrooms: 3,
+    sqft: 2800,
+    yearBuilt: 2025,
+    description: 'A landmark investment opportunity in the heart of Abuja\'s fastest-growing corridor. Bongo Residential Estate by Elysian Homes & Properties Limited offers premium plots with an unmatched 18-month cash back incentive — earn up to 45% returns plus a bonus plot allocation. The estate features a fully serviced layout with perimeter fencing, road networks, and reliable power infrastructure, positioned minutes from Kubwa and the Abuja city centre.',
     images: [
-      'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80',
-      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80',
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80',
+      'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
       'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80',
     ],
-    features: ['Infinity Pool', 'Home Theater', 'Wine Cellar', 'Smart Home', 'Ocean Views', 'Chef Kitchen', 'Spa', 'Private Beach Access'],
-    tags: ['Luxury', 'Oceanfront', 'New'],
+    features: ['18-Month Cashback', '45% ROI + 2 Bonus Plots', 'Governor\'s Consent Title', 'Perimeter Fencing', 'Road Network', 'Electricity', 'Gated Estate', 'Flexible Payment Plans'],
+    tags: ['Investment', 'New', 'Featured'],
     agentId: '1',
-    lat: 34.0259,
-    lng: -118.7798,
+    lat: 9.1507,
+    lng: 7.3615,
     featured: true,
     newListing: true,
-    garage: 3,
-    lotSize: 12000,
+    garage: 2,
+    lotSize: 6000,
   },
   {
     id: '2',
-    title: 'Manhattan Penthouse Suite',
-    address: '432 Park Avenue, Floor 88',
-    city: 'New York',
-    state: 'NY',
-    zip: '10022',
-    price: 7200000,
+    title: 'Eko Atlantic Sky Penthouse',
+    address: 'Eko Atlantic City, Ocean Drive',
+    city: 'Lagos',
+    state: 'Lagos',
+    zip: '101241',
+    price: 650000000,
     listingType: 'buy',
     propertyType: 'penthouse',
     bedrooms: 4,
-    bathrooms: 4.5,
-    sqft: 4800,
-    yearBuilt: 2019,
-    description: 'Perched atop one of Manhattan\'s most iconic towers, this extraordinary penthouse offers 360-degree city views through its 11-foot floor-to-ceiling windows. Featuring hand-selected Italian marble, bespoke millwork, and a private rooftop terrace, this residence defines luxury urban living.',
+    bathrooms: 4,
+    sqft: 5200,
+    yearBuilt: 2023,
+    description: 'Perched on the 40th floor of Eko Atlantic\'s most prestigious tower, this exceptional penthouse delivers uninterrupted panoramic views of the Atlantic Ocean and Lagos skyline. Finished to the highest international standard with Italian marble, Miele appliances, and a private rooftop terrace, this is the pinnacle of Lagos luxury living.',
     images: [
       'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=80',
       'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1200&q=80',
       'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80',
       'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80',
     ],
-    features: ['Private Rooftop Terrace', 'Concierge', 'Fitness Center', 'City Views', 'Italian Marble', 'Doorman', 'Valet Parking'],
-    tags: ['Luxury', 'Penthouse', 'City Views'],
+    features: ['Private Rooftop Terrace', 'Concierge', 'Fitness Center', 'Ocean Views', 'Italian Marble', 'Valet Parking', 'Generator Backup', '24/7 Security'],
+    tags: ['Luxury', 'Penthouse', 'Ocean Views'],
     agentId: '2',
-    lat: 40.7589,
-    lng: -73.9741,
+    lat: 6.4108,
+    lng: 3.4081,
     featured: true,
     newListing: false,
     garage: 2,
   },
   {
     id: '3',
-    title: 'Beverly Hills Estate',
-    address: '1200 Sunset Boulevard',
-    city: 'Beverly Hills',
-    state: 'CA',
-    zip: '90210',
-    price: 9500000,
+    title: 'Old Ikoyi Grand Mansion',
+    address: '14 Bourdillon Road, Old Ikoyi',
+    city: 'Lagos',
+    state: 'Lagos',
+    zip: '101233',
+    price: 1200000000,
     listingType: 'buy',
     propertyType: 'house',
     bedrooms: 7,
-    bathrooms: 8,
-    sqft: 9800,
-    yearBuilt: 2018,
-    description: 'An extraordinary estate behind private gates in the coveted flats of Beverly Hills. This palatial residence spans nearly 10,000 square feet and sits on over an acre of lush landscaped grounds. Features include a grand ballroom, screening room, resort-style pool, and staff quarters.',
+    bathrooms: 7,
+    sqft: 10500,
+    yearBuilt: 2020,
+    description: 'A palatial mansion on one of Ikoyi\'s most coveted addresses. Set behind private electric gates on a full plot, this grand residence spans three floors with a grand reception hall, formal dining room, cinema room, and a resort-style pool flanked by mature tropical gardens. Staff quarters, a generator house, and a 5-car garage complete this extraordinary estate.',
     images: [
       'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
       'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1200&q=80',
-      'https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=1200&q=80',
       'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80',
     ],
-    features: ['Grand Ballroom', 'Screening Room', 'Tennis Court', 'Guest House', 'Resort Pool', 'Gated Entry', 'Staff Quarters'],
+    features: ['Private Pool', 'Cinema Room', 'Staff Quarters', 'Gated Estate', '5-Car Garage', 'Smart Home', 'Tropical Garden', 'Generator House'],
     tags: ['Luxury', 'Estate', 'Featured'],
     agentId: '1',
-    lat: 34.0736,
-    lng: -118.4004,
+    lat: 6.4441,
+    lng: 3.4388,
     featured: true,
     newListing: false,
-    garage: 4,
-    lotSize: 45000,
+    garage: 5,
+    lotSize: 50000,
   },
   {
     id: '4',
-    title: 'Modern Downtown Condo',
-    address: '500 Brickell Key Drive, Unit 2401',
-    city: 'Miami',
-    state: 'FL',
-    zip: '33131',
-    price: 1250000,
+    title: 'Lekki Phase 1 Smart Apartment',
+    address: '23 Admiralty Way, Lekki Phase 1',
+    city: 'Lagos',
+    state: 'Lagos',
+    zip: '106104',
+    price: 185000000,
     listingType: 'buy',
-    propertyType: 'condo',
+    propertyType: 'apartment',
     bedrooms: 3,
     bathrooms: 3,
-    sqft: 2100,
+    sqft: 2400,
     yearBuilt: 2022,
-    description: 'A stunning high-rise condo in the heart of Brickell with panoramic bay and city views. This fully updated residence features an open floor plan, gourmet kitchen with SubZero appliances, and resort-style building amenities including a rooftop pool and spa.',
+    description: 'A stunning contemporary apartment in one of Lekki Phase 1\'s most sought-after serviced residences. The open-plan living space is bathed in natural light through floor-to-ceiling glazing, with a fully fitted kitchen featuring imported appliances, and a private balcony with lagoon-facing views. Full estate amenities and 24-hour security.',
     images: [
       'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
       'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&q=80',
       'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80',
       'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&q=80',
     ],
-    features: ['Bay Views', 'Rooftop Pool', 'Gym', 'Concierge', 'Smart Home', 'Private Balcony'],
-    tags: ['New', 'Bay Views', 'Open House'],
+    features: ['Lagoon Views', 'Smart Home', 'Pool', 'Gym', 'Concierge', 'Private Balcony', 'Generator', '24/7 Security'],
+    tags: ['New', 'Lagoon Views', 'Open House'],
     agentId: '3',
-    lat: 25.7617,
-    lng: -80.1918,
+    lat: 6.4484,
+    lng: 3.4714,
     featured: true,
     newListing: true,
     openHouse: 'Sun, Apr 27 · 1–4 PM',
@@ -196,91 +196,91 @@ export const properties: Property[] = [
   },
   {
     id: '5',
-    title: 'Scottsdale Desert Retreat',
-    address: '8900 N Pima Road',
-    city: 'Scottsdale',
-    state: 'AZ',
-    zip: '85258',
-    price: 2800000,
+    title: 'Maitama Executive Villa',
+    address: 'Plot 1452, Cadastral Zone A03, Maitama',
+    city: 'Abuja',
+    state: 'FCT',
+    zip: '900271',
+    price: 380000000,
     listingType: 'buy',
-    propertyType: 'house',
+    propertyType: 'villa',
     bedrooms: 5,
-    bathrooms: 5.5,
-    sqft: 5600,
-    yearBuilt: 2020,
-    description: 'A masterfully designed desert contemporary home nestled against the iconic McDowell Mountains. Clean lines, natural materials, and expansive retractable walls create a seamless indoor-outdoor living experience. The resort-style backyard features a negative-edge pool, covered ramada, and built-in BBQ.',
+    bathrooms: 5,
+    sqft: 6200,
+    yearBuilt: 2021,
+    description: 'An architecturally distinguished executive villa in the heart of Maitama, Abuja\'s most prestigious residential district. Combining clean contemporary lines with luxurious finishes — imported stone flooring, bespoke cabinetry, and a heated infinity pool — this home sets the standard for high-level living in the nation\'s capital. Minutes from the Presidential Villa, top embassies, and the Transcorp Hilton.',
     images: [
       'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80',
       'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80',
       'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80',
       'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1200&q=80',
     ],
-    features: ['Mountain Views', 'Negative-Edge Pool', 'Smart Home', 'Outdoor Kitchen', 'Casita', '4-Car Garage'],
-    tags: ['Luxury', 'Mountain Views'],
+    features: ['Infinity Pool', 'Smart Home', 'Outdoor Kitchen', 'Guest Chalet', '4-Car Garage', 'BQ', 'Perimeter Wall', 'Intercom Security'],
+    tags: ['Luxury', 'Executive'],
     agentId: '2',
-    lat: 33.6292,
-    lng: -111.8943,
+    lat: 9.0820,
+    lng: 7.4858,
     featured: false,
     newListing: false,
     garage: 4,
-    lotSize: 22000,
+    lotSize: 28000,
   },
   {
     id: '6',
-    title: 'Chelsea Luxury Apartment',
-    address: '245 W 14th Street, Unit 8C',
-    city: 'New York',
-    state: 'NY',
-    zip: '10011',
-    price: 14500,
+    title: 'GRA Port Harcourt Luxury Duplex',
+    address: '7 Peter Odili Road, GRA Phase 2',
+    city: 'Port Harcourt',
+    state: 'Rivers',
+    zip: '500272',
+    price: 900000,
     listingType: 'rent',
-    propertyType: 'apartment',
-    bedrooms: 2,
-    bathrooms: 2,
-    sqft: 1450,
-    yearBuilt: 2017,
-    description: 'Elegant two-bedroom apartment in the heart of Chelsea with designer finishes throughout. Features an open kitchen with waterfall island, in-unit washer/dryer, and a private terrace with High Line views. Full-service building with doorman, gym, and rooftop.',
+    propertyType: 'house',
+    bedrooms: 4,
+    bathrooms: 4,
+    sqft: 3600,
+    yearBuilt: 2019,
+    description: 'A beautifully finished luxury duplex in the serene and secure GRA Phase 2, Port Harcourt\'s premier residential enclave. The home features double-height entrance foyer, spacious en-suite rooms, a designer kitchen with granite worktops, and a landscaped garden. Fully serviced compound with 24-hour security, CCTV, and dedicated generator.',
     images: [
       'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80',
       'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80',
       'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80',
       'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&q=80',
     ],
-    features: ['High Line Views', 'Private Terrace', 'Gym', 'Doorman', 'In-Unit W/D', 'Rooftop Access'],
-    tags: ['Luxury', 'Terrace', 'Available Now'],
+    features: ['Landscaped Garden', 'CCTV Security', 'Generator', 'Granite Kitchen', 'En-suite Rooms', 'BQ', 'Tiled Compound'],
+    tags: ['Luxury', 'Available Now'],
     agentId: '3',
-    lat: 40.7406,
-    lng: -74.0002,
+    lat: 4.8156,
+    lng: 7.0498,
     featured: true,
     newListing: true,
-    garage: 1,
+    garage: 2,
   },
   {
     id: '7',
-    title: 'Pacific Heights Townhouse',
-    address: '2900 Broadway',
-    city: 'San Francisco',
-    state: 'CA',
-    zip: '94115',
-    price: 3750000,
+    title: 'Victoria Island Luxury Townhouse',
+    address: '5 Adeola Odeku Street, Victoria Island',
+    city: 'Lagos',
+    state: 'Lagos',
+    zip: '101241',
+    price: 420000000,
     listingType: 'buy',
     propertyType: 'townhouse',
     bedrooms: 4,
-    bathrooms: 3.5,
-    sqft: 3800,
-    yearBuilt: 2015,
-    description: 'An impeccably renovated Victorian-meets-modern townhouse in prestigious Pacific Heights. Original architectural details harmonize with contemporary updates: chef\'s kitchen, spa-like primary suite, and a roof deck with stunning Bay views. Walking distance to top restaurants and boutiques.',
+    bathrooms: 4,
+    sqft: 4100,
+    yearBuilt: 2022,
+    description: 'A refined four-bedroom townhouse in the commercial and diplomatic heart of Victoria Island. Spread across four floors with a private rooftop entertainment terrace, this residence combines the benefits of apartment-style building security with the space and privacy of a standalone home. Walking distance to top restaurants, banks, and embassies.',
     images: [
       'https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=1200&q=80',
       'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1200&q=80',
       'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=1200&q=80',
       'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80',
     ],
-    features: ['Bay Views', 'Roof Deck', 'Chef Kitchen', 'Period Details', 'Wine Room', 'Smart Home'],
-    tags: ['Luxury', 'Bay Views', 'Open House'],
+    features: ['Rooftop Terrace', 'Chef Kitchen', 'Smart Home', 'Wine Room', 'Private Lift', 'Generator', '24/7 Security'],
+    tags: ['Luxury', 'Open House'],
     agentId: '1',
-    lat: 37.7920,
-    lng: -122.4367,
+    lat: 6.4285,
+    lng: 3.4206,
     featured: false,
     newListing: false,
     openHouse: 'Sat, Apr 26 · 2–5 PM',
@@ -288,30 +288,30 @@ export const properties: Property[] = [
   },
   {
     id: '8',
-    title: 'Brickell Waterfront Condo',
-    address: '1000 Brickell Bay Dr, Unit 3200',
-    city: 'Miami',
-    state: 'FL',
-    zip: '33131',
-    price: 8500,
+    title: 'Oniru Waterfront Serviced Apartment',
+    address: 'Oniru Estate, Off Lekki-Epe Expressway',
+    city: 'Lagos',
+    state: 'Lagos',
+    zip: '106104',
+    price: 1200000,
     listingType: 'rent',
     propertyType: 'condo',
     bedrooms: 2,
     bathrooms: 2,
-    sqft: 1650,
-    yearBuilt: 2020,
-    description: 'Stunning waterfront condo with breathtaking views of Biscayne Bay. Modern open floor plan with floor-to-ceiling windows, Italian cabinetry, and premium finishes. Resort-style amenities include pool deck, spa, fitness center, and valet parking.',
+    sqft: 1800,
+    yearBuilt: 2021,
+    description: 'A premium fully-serviced two-bedroom apartment in the exclusive Oniru Estate with partial Atlantic Ocean views. Modern open-plan living with floor-to-ceiling windows, imported kitchen fittings, and high-quality finishes throughout. Full estate amenities including a pool deck, gym, 24-hour concierge, and controlled access.',
     images: [
       'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
       'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&q=80',
       'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80',
       'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80',
     ],
-    features: ['Bay Views', 'Valet Parking', 'Pool', 'Spa', 'Fitness Center', 'Concierge'],
+    features: ['Ocean Views', 'Pool', 'Gym', 'Concierge', 'Generator', 'Water Treatment', 'CCTV Security'],
     tags: ['Waterfront', 'Available Now'],
     agentId: '2',
-    lat: 25.7617,
-    lng: -80.1920,
+    lat: 6.4421,
+    lng: 3.4571,
     featured: false,
     newListing: true,
     garage: 1,
@@ -321,66 +321,66 @@ export const properties: Property[] = [
 export const agents: Agent[] = [
   {
     id: '1',
-    name: 'Alexandra Reeves',
+    name: 'Adaeze Okonkwo',
     title: 'Luxury Property Specialist',
     photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
-    phone: '+1 (310) 555-0191',
+    phone: '+234 (0) 802 555 0191',
     email: 'chicsretreat@gmail.com',
-    bio: 'With over 15 years of experience in luxury real estate, Alexandra has closed more than $500M in transactions across Los Angeles, Beverly Hills, and Malibu. Her deep market expertise and white-glove service have earned her a reputation as one of the most trusted names in California luxury real estate.',
+    bio: 'With over 15 years of experience in Nigerian luxury real estate, Adaeze has closed more than ₦80B in transactions across Lagos Island, Ikoyi, and Victoria Island. Her deep market expertise and white-glove service have earned her a reputation as one of the most trusted names in Nigerian premium real estate.',
     experience: 15,
     listings: 42,
     sold: 380,
     rating: 4.9,
     reviews: 127,
-    specialties: ['Luxury Homes', 'Oceanfront', 'Investment Properties'],
+    specialties: ['Luxury Homes', 'Ikoyi & VI', 'Investment Properties'],
     social: { linkedin: '#', instagram: '#' },
   },
   {
     id: '2',
-    name: 'Marcus Chen',
+    name: 'Chukwuemeka Eze',
     title: 'Senior Real Estate Advisor',
     photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80',
-    phone: '+1 (212) 555-0134',
+    phone: '+234 (0) 803 555 0134',
     email: 'chicsretreat@gmail.com',
-    bio: 'Marcus brings a unique perspective combining Wall Street financial acumen with deep real estate expertise. Specializing in New York City and the Hamptons, he has advised Fortune 500 executives, celebrities, and international investors on their most important real estate decisions.',
+    bio: 'Emeka combines financial sector acumen with deep real estate expertise accumulated over 12 years serving Abuja\'s executive class. Specialising in Maitama, Asokoro, and Eko Atlantic, he has advised ministers, diplomats, and multinationals on their most significant property decisions.',
     experience: 12,
     listings: 38,
     sold: 290,
     rating: 4.8,
     reviews: 98,
-    specialties: ['Penthouses', 'Investment', 'New Development'],
+    specialties: ['Penthouses', 'Abuja Market', 'New Development'],
     social: { linkedin: '#', twitter: '#' },
   },
   {
     id: '3',
-    name: 'Sofia Martinez',
+    name: 'Chiamaka Obi',
     title: 'Residential & Luxury Rentals',
     photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80',
-    phone: '+1 (305) 555-0278',
+    phone: '+234 (0) 805 555 0278',
     email: 'chicsretreat@gmail.com',
-    bio: 'Sofia is Miami\'s go-to specialist for luxury waterfront properties and high-end rentals. Born and raised in Miami, she has an intimate knowledge of every neighborhood and building in the city. Her bilingual expertise and international network make her uniquely positioned to serve both domestic and global clients.',
+    bio: 'Chiamaka is Port Harcourt\'s foremost specialist in luxury residential properties and high-end rentals. Born and raised in the Garden City, she has an unrivalled knowledge of every GRA enclave, estate, and off-plan development. Her broad network spans the oil & gas sector and the wider South-South business community.',
     experience: 10,
     listings: 55,
     sold: 210,
     rating: 4.9,
     reviews: 84,
-    specialties: ['Waterfront', 'Luxury Rentals', 'New Development'],
+    specialties: ['Waterfront', 'Luxury Rentals', 'Port Harcourt GRA'],
     social: { linkedin: '#', instagram: '#' },
   },
   {
     id: '4',
-    name: 'James Whitfield',
+    name: 'Olumide Adeyemi',
     title: 'Estate & Development Expert',
     photo: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&q=80',
-    phone: '+1 (415) 555-0356',
+    phone: '+234 (0) 807 555 0356',
     email: 'chicsretreat@gmail.com',
-    bio: 'James has spent two decades helping clients navigate San Francisco\'s competitive and nuanced real estate market. His background in architecture gives him an eye for quality that clients trust implicitly. James has been named SF\'s Top Agent five years running by the San Francisco Business Times.',
+    bio: 'Olumide has spent two decades navigating Lagos\'s dynamic and nuanced property market. His background in architecture gives him a critical eye for construction quality and value that clients rely on completely. He has been recognised as one of Nigeria\'s Top 10 Real Estate Professionals three years running by Property & Finance Magazine.',
     experience: 20,
     listings: 29,
     sold: 450,
     rating: 5.0,
     reviews: 156,
-    specialties: ['Architecture', 'Historic Properties', 'SF Bay Area'],
+    specialties: ['Architecture & Design', 'Lekki Corridor', 'Off-Plan Investment'],
     social: { linkedin: '#', instagram: '#', twitter: '#' },
   },
 ];
@@ -388,43 +388,43 @@ export const agents: Agent[] = [
 export const testimonials: Testimonial[] = [
   {
     id: '1',
-    name: 'David & Emma Thompson',
-    location: 'Beverly Hills, CA',
+    name: 'Chidi & Ngozi Okafor',
+    location: 'Old Ikoyi, Lagos',
     photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80',
     rating: 5,
-    text: 'Alexandra exceeded every expectation we had. Finding our dream home in Beverly Hills felt impossible until she took over. Her market knowledge, negotiation skills, and attention to detail are simply unmatched. We closed $400K under asking price on a property we\'d been eyeing for months.',
+    text: 'Adaeze exceeded every expectation we had. Finding our dream home on Bourdillon Road felt impossible until she took over. Her knowledge of the Ikoyi market, negotiation skills, and attention to detail are simply unmatched. We secured the property at a price we thought was unreachable.',
     date: 'March 2025',
-    agentName: 'Alexandra Reeves',
+    agentName: 'Adaeze Okonkwo',
   },
   {
     id: '2',
-    name: 'Robert Kim',
-    location: 'Manhattan, NY',
+    name: 'Tunde Adeleke',
+    location: 'Maitama, Abuja',
     photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80',
     rating: 5,
-    text: 'Marcus helped me find an off-market penthouse that wasn\'t even listed yet. His network is extraordinary. The entire process from first showing to closing took just 6 weeks — record time for a transaction of this size. I\'ve already referred three colleagues to him.',
+    text: 'Emeka helped me secure an off-market villa in Maitama before it was ever publicly listed. His network in Abuja is extraordinary. The entire process from first viewing to keys in hand took just 5 weeks — impressive for a transaction of this scale. I\'ve already referred two colleagues to him.',
     date: 'February 2025',
-    agentName: 'Marcus Chen',
+    agentName: 'Chukwuemeka Eze',
   },
   {
     id: '3',
-    name: 'Isabella Santos',
-    location: 'Miami, FL',
+    name: 'Blessing Adesanya',
+    location: 'Lekki Phase 1, Lagos',
     photo: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&q=80',
     rating: 5,
-    text: 'Sofia is an absolute gem. She understood exactly what I was looking for in a Miami rental and found me a stunning waterfront condo within two days of our first meeting. Her local knowledge is unbeatable and she made the whole process stress-free.',
+    text: 'Chiamaka is an absolute gem. She understood exactly what I needed in a Lekki rental and found me a stunning serviced apartment within three days of our first call. Her local knowledge is unbeatable and she managed the entire process — from inspection to tenancy agreement — without any stress on my part.',
     date: 'April 2025',
-    agentName: 'Sofia Martinez',
+    agentName: 'Chiamaka Obi',
   },
   {
     id: '4',
-    name: 'Michael & Priya Patel',
-    location: 'San Francisco, CA',
+    name: 'Dr. Ahmed & Fatima Musa',
+    location: 'Asokoro, Abuja',
     photo: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&q=80',
     rating: 5,
-    text: 'James\'s architectural background made all the difference when evaluating properties in Pacific Heights. He spotted structural issues that saved us from making a costly mistake — and then found us an absolute gem two weeks later. His expertise is worth every penny.',
+    text: 'Olumide\'s background in architecture made all the difference when we were evaluating builds on VI. He identified quality issues that would have cost us millions — and then found us a far superior property two weeks later. His expertise and integrity are genuinely rare in this market.',
     date: 'January 2025',
-    agentName: 'James Whitfield',
+    agentName: 'Olumide Adeyemi',
   },
 ];
 
@@ -433,24 +433,24 @@ export const blogPosts: BlogPost[] = [
     id: '1',
     title: '2025 Luxury Real Estate Market Outlook: What Buyers Need to Know',
     excerpt: 'The luxury real estate market is entering a new phase. Here\'s what high-net-worth buyers should expect in the coming year and how to position yourself for success.',
-    content: `<p>The luxury real estate market is entering 2025 in a fundamentally different position than it occupied just two years ago. After the rate-shock correction of 2023, the market has found its footing — and for buyers with the capital and conviction to act, the window of opportunity is unusually attractive.</p>
-<h2>The Rate Environment Is Finally Cooperating</h2>
-<p>The Federal Reserve's pivot toward rate cuts, which began in late 2024, has already filtered through to jumbo mortgage markets. Rates on loans above $2 million have declined meaningfully from their 2023 peaks, reducing carrying costs for financed purchases. For cash buyers — who represent the majority of transactions above $5M — the impact is indirect but real: lower rates bring more financed buyers back into the pool, tightening competition on desirable properties.</p>
+    content: `<p>Nigeria's luxury real estate market is entering 2025 in a fundamentally different position than it occupied just two years ago. After the naira devaluation shocks of 2023, the market has recalibrated — and for buyers with the capital and conviction to act, the window of opportunity is unusually attractive for those thinking in naira terms.</p>
+<h2>The Currency Environment Is Recalibrating</h2>
+<p>The Central Bank of Nigeria's shift toward a more market-reflective exchange rate, which began in mid-2023, has had complex effects on the luxury real estate market. In naira terms, prime property values have risen sharply as inflation eroded purchasing power. In dollar terms, values remain below their 2021–2022 peaks — creating a compelling entry point for diaspora buyers and those with foreign-currency income who want naira-denominated assets as a hedge.</p>
 <h2>Inventory Remains the Key Constraint</h2>
-<p>Despite broad market softness in the $1M–$2M range, the true luxury segment — properties above $3M — continues to suffer from severe inventory constraints. Owners of exceptional properties have little incentive to sell into a market where finding an equivalent replacement would be difficult and expensive. This dynamic shows no signs of reversing in 2025.</p>
-<p>Markets most affected by this scarcity: Malibu oceanfront, Beverly Hills flats, Manhattan penthouses above $10M, and Florida's coastal barrier islands. In these markets, properties that come to market are often sold within days — sometimes before they appear on public databases.</p>
-<h2>New Construction Creates Opportunities</h2>
-<p>The most interesting story of 2025 may be the delivery pipeline. A significant number of ultra-luxury condominium projects conceived before the 2022 rate spike are now completing, particularly in Miami, New York, and Los Angeles. This creates negotiating leverage that hasn't existed in the resale market for years.</p>
-<p>Developers who pre-sold at 2021–2022 price points may be willing to negotiate on parking, storage, and closing costs to clear remaining inventory. Buyers who engage early — before these buildings achieve stabilized occupancy — can capture meaningful value.</p>
-<h2>The Geographic Shift Continues</h2>
-<p>Sun Belt markets that surged during the pandemic era have undergone a healthy correction. Austin, Phoenix, and Nashville saw double-digit price growth followed by retrenchment — and are now attractively priced relative to their long-term fundamentals. Remote work normalization means buyers are no longer choosing between career and lifestyle.</p>
-<p>Meanwhile, New York and California markets are seeing a quiet resurgence of interest from buyers who left during the pandemic and have been priced out of the markets they moved to. The appeal of world-class culture, walkability, and professional infrastructure is proving durable.</p>
+<p>Despite economic turbulence, the true luxury segment — properties in Ikoyi, Banana Island, Eko Atlantic, and Maitama — continues to suffer from severe inventory constraints. Owners of exceptional properties have little incentive to sell into a market where finding an equivalent replacement would be difficult and expensive. Grade A supply in prime Lagos has not kept pace with demand for a decade.</p>
+<p>Markets most affected by this scarcity: Old Ikoyi's Bourdillon Road corridor, Banana Island, and the first-generation towers on Eko Atlantic. In these locations, properties that come to market are often transacted within weeks — sometimes before any public listing is created.</p>
+<h2>New Development Creates Opportunities</h2>
+<p>The most interesting story of 2025 may be the off-plan pipeline. A significant number of ultra-luxury residential projects across Lekki Phase 1, Victoria Island, and Abuja's Katampe extension are in various stages of development. This creates negotiating leverage that doesn't exist in the resale market.</p>
+<p>Developers managing cash flow under construction financing pressure are often willing to negotiate on payment schedules, finishing upgrades, and pricing — particularly for buyers who can demonstrate commitment early. Buyers who engage before a project reaches 60% subscription can capture meaningful discounts relative to delivered value.</p>
+<h2>The Geographic Diversification Story</h2>
+<p>Abuja's market has matured significantly. Five years ago, Abuja was considered the secondary market to Lagos's primary. Today, driven by federal government infrastructure investment, the return of oil sector capital, and a growing middle class demanding quality housing, Maitama and Asokoro are generating appreciation that competes credibly with Lekki and Ikoyi.</p>
+<p>Meanwhile, Port Harcourt's GRA enclaves are benefiting from renewed oil sector activity and returning diaspora investment. Garden City is no longer the afterthought it was treated as — it is a genuine investment market with compressing yields and rising capital values.</p>
 <h2>What Sophisticated Buyers Are Doing Right Now</h2>
-<p>The buyers we're advising at ChicsRetreat are taking a portfolio approach to real estate. Rather than concentrating capital in a single property, many are diversifying across markets — pairing a primary residence with a rental income property in a high-yield market like Miami or a vacation property in a mountain or coastal destination.</p>
-<p>Whatever your strategy, the consistent advice from our team is this: work with an agent who has genuine market relationships. In the luxury segment, the best opportunities never reach the open market. They're transacted quietly between agents who trust each other and whose clients' needs align. That network is the most valuable asset we offer.</p>`,
+<p>The clients we're advising at ChicsRetreat are taking a portfolio approach to Nigerian real estate. Rather than concentrating capital in a single property, many are pairing a primary Lagos residence with an Abuja investment property and a short-let unit managed professionally for rental yield. The diversification reduces exposure to any single market and optimises for both capital preservation and income.</p>
+<p>Whatever your strategy, the consistent advice from our team is this: work with an agent who has genuine market relationships. In Nigeria's luxury segment, the best opportunities never reach public databases. They are transacted quietly between agents who trust each other and whose clients' needs align. That network is the most valuable asset we offer.</p>`,
     image: 'https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800&q=80',
     category: 'Market Trends',
-    author: 'Marcus Chen',
+    author: 'Chukwuemeka Eze',
     date: 'April 15, 2025',
     readTime: 8,
     tags: ['Market Trends', 'Luxury', 'Investment'],
@@ -459,55 +459,55 @@ export const blogPosts: BlogPost[] = [
     id: '2',
     title: 'The Ultimate Guide to Buying Your First Luxury Home',
     excerpt: 'Stepping into the luxury market for the first time? Our comprehensive guide walks you through every step — from securing financing to closing the deal on your dream property.',
-    content: `<p>Entering the luxury real estate market for the first time is both exhilarating and daunting. The properties are extraordinary. The stakes are high. The process involves nuances that simply don't apply in the mass market. After 15 years guiding first-time luxury buyers through transactions from $2M to $20M, here is what I wish every client knew before we started.</p>
+    content: `<p>Entering the luxury real estate market for the first time is both exhilarating and daunting. The properties are extraordinary. The stakes are high. The process involves nuances that simply don't apply in the mass market. After 15 years guiding first-time luxury buyers through transactions from ₦100M to ₦2B, here is what I wish every client knew before we started.</p>
 <h2>Understand the Financing Landscape First</h2>
-<p>Jumbo mortgages — loans above the conforming limit, currently around $766,550 in most markets — operate by different rules than conventional mortgages. Lenders require more documentation, larger reserves, and impose stricter debt-to-income requirements. The approval process takes longer.</p>
-<p>Before you tour a single property, get pre-approved. Not pre-qualified — actually pre-approved. This means submitting your full financial picture to a lender who specializes in jumbo lending. In competitive luxury markets, sellers will not consider an offer from a buyer who can't demonstrate financing certainty. Cash is even better: if you have the option to close in cash and refinance later, that flexibility can be worth hundreds of thousands in negotiating leverage.</p>
+<p>Mortgage finance for luxury properties in Nigeria remains limited compared to mature markets, and the terms — high interest rates, short tenors, substantial equity requirements — mean that the majority of transactions above ₦100M are cash transactions. This is not a market where you can rely on cheap leverage to amplify returns.</p>
+<p>Before you tour a single property, understand your liquidity position with precision. Can you move within four to six weeks if the right property appears? Sellers of premium properties have little patience for buyers who need time to arrange funds. The best assets in the Ikoyi and Maitama corridors go to buyers who can demonstrate readiness immediately. That readiness is your most important negotiating asset.</p>
 <h2>Choose Your Agent Carefully</h2>
-<p>The luxury market is small, relationship-driven, and deeply dependent on trust. The agent you choose will determine which properties you see, how sellers perceive your offer, and ultimately what you pay. This is not a market where you want to work with a generalist who dabbles in the high end occasionally.</p>
+<p>Nigeria's luxury market is small, relationship-driven, and deeply dependent on trust. The agent you choose will determine which properties you see — including the 60–70% that are never publicly advertised — how sellers perceive your offer, and ultimately what you pay. This is not a market where you want to work with a generalist who dabbles in the high end occasionally.</p>
 <p>Ask prospective agents: How many transactions above your target price have you closed in the past 12 months? What off-market opportunities are you currently aware of? Can you provide references from buyers at my price point? The answers will tell you everything.</p>
 <h2>Define What You Actually Need</h2>
-<p>Luxury properties are often so compelling that buyers lose sight of their actual requirements. I've seen clients fall in love with extraordinary estates that were too large to maintain, too far from schools, or in HOA structures they hadn't fully understood. Before viewing anything, write down your non-negotiables and stick to them.</p>
-<p>Consider: proximity to work, schools, and airports; property type (estate vs. condo vs. urban townhouse); indoor/outdoor living priorities; privacy requirements; and your appetite for renovation versus turnkey condition. Properties requiring renovation are almost always underpriced relative to turnkey equivalents — but renovation in the luxury segment can easily run $1,000–$2,000 per square foot for quality work.</p>
-<h2>Commission a Pre-Offer Inspection</h2>
-<p>Many luxury buyers are reluctant to commission inspections before making an offer, fearing they'll lose money if the deal falls through. This is a false economy. A thorough inspection by a specialist who understands high-end construction can identify issues that would cost millions to remediate — roofing, foundation, mechanical systems, and environmental concerns like mold or soil contamination are common in older luxury properties.</p>
-<p>In competitive situations, consider commissioning a pre-inspection and offering to waive the inspection contingency in your offer. This substantially strengthens your position while still protecting you from material surprises.</p>
+<p>Luxury properties are often so compelling that buyers lose sight of their actual requirements. I've seen clients fall in love with extraordinary properties in Banana Island that required full renovation, or large Maitama estates that were impractical to staff and maintain. Before viewing anything, write down your non-negotiables and hold to them.</p>
+<p>Consider: proximity to work, schools, and infrastructure; property type (standalone house vs. serviced apartment vs. townhouse); security and estate management quality; generator and water supply reliability; and your appetite for renovation versus turnkey. In Nigeria's luxury segment, renovation of a large property can easily cost ₦50M–₦150M for quality work — a material addition to your effective purchase price.</p>
+<h2>Conduct Rigorous Title Due Diligence</h2>
+<p>Title verification is the most important step in any Nigerian property transaction, and at the luxury level the stakes are proportionate. At minimum, you must verify the Certificate of Occupancy (C of O) or Governor's Consent is valid and unencumbered. Engage an independent property solicitor — not the developer's lawyer, not the seller's lawyer — to conduct a search at the relevant land registry before you commit any funds.</p>
+<p>This process takes two to four weeks. Sellers of genuine quality properties will accommodate it. If a seller is pushing for a rushed transaction without time for proper searches, treat that as a significant red flag regardless of how compelling the property appears.</p>
 <h2>Understand the Full Cost of Ownership</h2>
-<p>The purchase price is only the beginning. Before you make an offer, understand the ongoing carrying costs: property taxes (which can be $50,000–$200,000+ per year on high-value properties), homeowner's association fees, insurance (luxury properties often require specialized coverage), and staffing costs if the property requires a housekeeper, groundskeeper, or property manager.</p>
-<p>For properties in California, Proposition 13 means reassessment at purchase — your taxes will be based on the purchase price, not the prior owner's basis. In Florida, homestead exemption provides meaningful savings for primary residents. These details matter when comparing the economics of competing properties.</p>`,
+<p>The purchase price is only the beginning. Before you make an offer, understand the carrying costs: Land Use Charge (Lagos) or Ground Rent (FCT), service charges for serviced estates, security costs, generator fuel and maintenance (plan for ₦200,000–₦500,000+ per month for a large property), and staffing if the property requires a housekeeper, gardener, or property manager.</p>
+<p>Estate service charges vary enormously — some premium estates charge ₦1M–₦3M per annum for genuine services (security, landscaping, road maintenance, power backup infrastructure); others charge similar amounts for minimal delivery. Verify what you are actually getting before factoring charges into your economics.</p>`,
     image: 'https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=800&q=80',
     category: 'Buying Guide',
-    author: 'Alexandra Reeves',
+    author: 'Adaeze Okonkwo',
     date: 'April 8, 2025',
     readTime: 12,
     tags: ['Buying Guide', 'First Time', 'Tips'],
   },
   {
     id: '3',
-    title: 'Top 5 Miami Neighborhoods for Real Estate Investment in 2025',
-    excerpt: 'Miami continues to attract global capital. We break down the five neighborhoods offering the best combination of appreciation potential and rental yields right now.',
-    content: `<p>Miami's real estate market has matured remarkably in the past decade. What was once a market driven primarily by South American capital flight has become a globally recognized investment destination attracting buyers from New York, California, Europe, and Asia. The best opportunities are still ahead — if you know where to look.</p>
-<h2>1. Coconut Grove: The Undervalued Classic</h2>
-<p>Coconut Grove is Miami's oldest neighborhood and, I would argue, its most undervalued. Mature tree canopies, a walkable village center, and a genuinely diverse mix of architecture — from mid-century modern to new construction — make it unique among Miami's neighborhoods. It doesn't have the flash of Brickell or South Beach, but the fundamentals are compelling.</p>
-<p>Prices per square foot in the Grove remain 20–30% below comparable neighborhoods, and the pipeline of new luxury construction is limited by the neighborhood's low-density zoning. Waterfront single-family homes on the bay are trading at $3M–$8M, with strong rental demand from the tech and creative communities relocating to Miami.</p>
-<h2>2. Edgewater: The Next Brickell</h2>
-<p>A decade ago, Edgewater was a transitional neighborhood of aging apartment buildings between downtown and Wynwood. Today, it hosts some of the most striking new luxury towers in the city, and the transformation is accelerating. Its Biscayne Bay frontage — largely undeveloped compared to Brickell's densely built waterfront — creates an unusual opportunity: bay views at prices that still lag Brickell by 15–25%.</p>
-<p>The investor case here is straightforward: new towers from premier developers are commanding $700–$900 per square foot on pre-sales. As the neighborhood's amenity base fills in, those numbers will converge with Brickell's $1,000+ pricing. Buyers who act before that convergence happens capture the spread.</p>
-<h2>3. Coral Gables: The Stability Play</h2>
-<p>If you're seeking capital preservation combined with reliable rental income, Coral Gables is the market's most consistent performer. The city's strict architectural standards and limited new development create enduring scarcity. The University of Miami anchors demand, and the presence of major multinational corporations in Brickell has pushed executive housing demand into the Gables' beautiful historic neighborhoods.</p>
-<p>Single-family homes in the $2M–$4M range are particularly attractive for investors who want to offer furnished rentals to corporate relocations. Gross yields of 5–6% are achievable — exceptional for the quality of property involved.</p>
-<h2>4. South of Fifth: The Luxury Rental Crown Jewel</h2>
-<p>South of Fifth is the quiet, refined residential pocket at the southern tip of South Beach that has attracted the city's most sophisticated residents for thirty years. Unlike the tourist-heavy stretches of Ocean Drive, SoFi is genuinely livable — walkable to world-class restaurants, steps from the beach, and protected from the noise of the entertainment district.</p>
-<p>Luxury condos here trade at $1,500–$2,500+ per square foot, the highest in Miami outside of Fisher Island. Monthly rental rates for furnished units run $15,000–$40,000, making even a $3M unit cash-flow positive when occupied.</p>
-<h2>5. Brickell Key: The Best-Kept Secret</h2>
-<p>Brickell Key is a man-made island connected to the Brickell financial district by a single bridge. The island's exclusivity, security, and bayfront setting have made it a perennial favorite with international buyers who value privacy above all else — yet it consistently trades at a discount to mainland Brickell.</p>
-<p>The opportunity to buy at pre-renovation prices in the older buildings and benefit from the subsequent value increase is real. Watch for motivated sellers — they represent the best risk/reward in the Miami market right now.</p>`,
+    title: 'Top 5 Lagos Neighbourhoods for Real Estate Investment in 2025',
+    excerpt: 'Lagos continues to attract domestic and international capital. We break down the five neighbourhoods offering the best combination of appreciation potential and rental yields right now.',
+    content: `<p>Lagos's real estate market has matured remarkably in the past decade. What was once a market dominated by a handful of Island addresses has expanded into a sophisticated, multi-tier investment landscape attracting buyers from across Nigeria, the diaspora, and international institutions. The best opportunities are still ahead — if you know where to look.</p>
+<h2>1. Ikoyi: The Enduring Blue Chip</h2>
+<p>Ikoyi remains Nigeria's most prestigious residential address and, for capital preservation, its most reliable market. The finite supply of genuinely prime addresses — Bourdillon Road, Alexander Avenue, Glover Road — combined with strong demand from multinationals, diplomats, and Nigeria's wealthiest individuals, creates a scarcity dynamic that no other Lagos neighbourhood can replicate.</p>
+<p>Prime Ikoyi properties are trading at ₦500,000–₦2M per square metre for completed stock, with off-plan pricing from quality developers sitting at a 20–30% discount to that range. Gross rental yields of 5–7% per annum are consistently achievable.</p>
+<h2>2. Eko Atlantic: The Frontier of Tomorrow</h2>
+<p>Eko Atlantic City is arguably Africa's most ambitious urban development — a reclaimed land city-within-a-city off Lagos Island designed to international standards with its own power, water, and road infrastructure. A decade ago it was a construction site. Today, towers from global and Nigerian developers are being completed and occupied at pace.</p>
+<p>The investment case is straightforward: global infrastructure in a global city. Prices remain below comparable international financial district addresses in Nairobi, Johannesburg, or Dubai — but that gap is closing. Early-stage investors who bought in 2018–2020 have seen values double in dollar terms.</p>
+<h2>3. Lekki Phase 1: The Sweet Spot</h2>
+<p>If Ikoyi is the Mayfair of Lagos, Lekki Phase 1 is its Chelsea — established, desirable, and still accessible to a wider pool of serious buyers. The corridor from Admiralty Way to the Lekki-Epe Expressway hosts some of the city's finest serviced apartment developments, and rental demand from the tech, media, and financial services sectors is exceptionally strong.</p>
+<p>Three-bedroom serviced apartments are the most liquid asset class in this corridor. Gross yields of 7–9% are achievable with professional short-let management, and capital values have appreciated 15–20% per annum in naira terms over the past three years.</p>
+<h2>4. Victoria Island: The Business Case</h2>
+<p>Victoria Island is Lagos's commercial and diplomatic hub — and its residential offering, particularly along Ahmadu Bello Way and the Adeola Odeku corridor, is among the most coveted in the city. The concentration of embassies, multinationals, and financial institutions creates sustained demand for quality corporate housing at premium rents.</p>
+<p>Furnished short-let apartments on Victoria Island can achieve ₦800,000–₦1,500,000 per month, making the investment arithmetic compelling for quality two- and three-bedroom units. Scarcity of Grade A residential stock relative to corporate demand is the enduring structural tailwind.</p>
+<h2>5. Banana Island: The Prestige Outlier</h2>
+<p>Banana Island is the most exclusive residential address in Nigeria — a planned island development off Ikoyi with a controlled number of residential plots, a marina, and a level of security and infrastructure found nowhere else in Lagos. Properties here very rarely come to market.</p>
+<p>When they do, they trade at Nigeria's highest residential values — from ₦2B for a well-located house to significantly more for trophy assets. The investment case is less about yield and more about wealth preservation: there will never be more Banana Island addresses. For buyers who can access this market, the long-term supply constraint is absolute.</p>`,
     image: 'https://images.unsplash.com/photo-1506966953602-c20cc11f75e3?w=800&q=80',
     category: 'Investment Tips',
-    author: 'Sofia Martinez',
+    author: 'Chiamaka Obi',
     date: 'March 28, 2025',
     readTime: 6,
-    tags: ['Investment', 'Miami', 'Neighborhoods'],
+    tags: ['Investment', 'Lagos', 'Neighbourhoods'],
   },
   {
     id: '4',
@@ -531,7 +531,7 @@ export const blogPosts: BlogPost[] = [
 <p>Properties with fragmented, consumer-grade systems that lack documentation and support are often more liability than asset. Properties with properly engineered, documented, and supported systems command — and deserve — a meaningful premium.</p>`,
     image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
     category: 'Lifestyle',
-    author: 'James Whitfield',
+    author: 'Olumide Adeyemi',
     date: 'March 20, 2025',
     readTime: 7,
     tags: ['Smart Home', 'Technology', 'Luxury'],
@@ -540,65 +540,65 @@ export const blogPosts: BlogPost[] = [
     id: '5',
     title: 'Negotiation Secrets: How We Save Clients Millions',
     excerpt: 'The best real estate negotiations happen before you ever make an offer. Here are the insider strategies our agents use to consistently close deals at below-asking prices.',
-    content: `<p>The question I am asked more often than any other is: how do your clients consistently get deals that other buyers miss? After 15 years and over $500M in closed transactions, the answer is never one thing. It's a system. And every part of that system starts before you ever pick up the phone to make an offer.</p>
+    content: `<p>The question I am asked more often than any other is: how do your clients consistently get deals that other buyers miss? After 15 years and over ₦80B in closed transactions across Lagos and Abuja, the answer is never one thing. It's a system. And every part of that system starts before you ever pick up the phone to make an offer.</p>
 <h2>Intelligence Is Your Most Valuable Asset</h2>
-<p>Great negotiators win in real estate because they know things their counterpart doesn't. Before I advise a client to make an offer on any property, I invest serious time in understanding the seller's situation. How long has the property been on the market? Did it come off the market and re-list? Were there price reductions, and if so, how large were they and when did they happen? Has the seller bought another property already?</p>
-<p>Each of these facts creates leverage. A seller who has already purchased their next home is carrying two mortgages and has strong incentive to close quickly. An estate sale may be more emotional — the family may resist below-ask offers on principle even when it's economically irrational. Knowing the difference shapes every offer you make.</p>
+<p>Great negotiators win in real estate because they know things their counterpart doesn't. Before I advise a client to make an offer on any property, I invest serious time in understanding the seller's situation. How long has the property been on the market? Did it come off the market and re-list? Were there price reductions, and if so, how large were they and when did they happen? Is this an estate sale, a relocation, or a developer managing cash flow?</p>
+<p>Each of these facts creates leverage. A developer completing a project under construction finance pressure has strong incentive to close quickly. A family estate sale may be emotional — the heirs may resist below-ask offers on principle even when it is economically irrational. Knowing the difference shapes every offer you make.</p>
 <h2>Price Is Only One of Many Variables</h2>
-<p>Amateur buyers negotiate on price. Sophisticated buyers negotiate on the package. In luxury real estate, the contract contains dozens of terms that carry real economic weight: earnest money and its release conditions, inspection contingency periods, financing contingencies, personal property inclusions, closing date, seller-paid closing costs, and post-closing occupancy arrangements.</p>
-<p>I've saved clients $300,000 on paper by accepting a seller's asking price while negotiating aggressively on terms that reduced the effective price — furniture inclusions that would have cost $150,000 to replace, a seller-paid rate buydown worth $80,000 over five years, and an extended escrow that gave my client time to structure a 1031 exchange. The listing price never changed.</p>
+<p>Amateur buyers negotiate on price. Sophisticated buyers negotiate on the package. In Nigerian luxury real estate, the transaction contains numerous terms that carry real economic weight: payment schedule and milestones, furniture and fitting inclusions, documentation and legal fee allocation, completion and handover date, and post-sale remediation commitments for snagging items.</p>
+<p>I've saved clients ₦30M on paper by accepting a seller's asking price while negotiating aggressively on terms that reduced the effective cost — appliance packages that would have cost ₦15M to source independently, an agreed payment schedule that preserved the buyer's liquidity for three months, and seller-funded title upgrade to Governor's Consent. The asking price never moved.</p>
 <h2>The Psychology of the Counter-Offer</h2>
-<p>How you structure your initial offer communicates as much as the number itself. An offer at a round number ($3,000,000 on a $3,500,000 listing) signals that the buyer is anchoring at a psychologically simple number — not that they've done serious homework. An offer at $3,187,500 says something different: that the buyer has analyzed the comparable sales and arrived at a precise conclusion. The second offer is taken more seriously, even if the number is lower.</p>
-<p>Similarly, a clean, well-organized offer package with a strong pre-approval letter, evidence of funds, and a brief personal letter from the buyer is more compelling than a bare contract. Sellers are human beings. They respond to buyers who seem worthy of their home.</p>
+<p>How you structure your initial offer communicates as much as the number itself. An offer at a round number (₦400M on a ₦450M listing) signals that the buyer is anchoring at a psychologically simple number — not that they've done serious research. An offer at ₦387.5M says something different: that the buyer has analyzed recent comparable transactions and arrived at a considered conclusion. The second offer is taken more seriously, even when the number is lower.</p>
+<p>Similarly, a buyer who shows evidence of clear funds and an established legal team, and who comes recommended by a trusted agent, is a fundamentally different counterpart to the seller than an unknown party making the same offer. In Nigeria's luxury market, trust in the buyer's ability to close is often as important as the headline price.</p>
 <h2>Know When to Walk Away</h2>
-<p>The most powerful negotiating position is genuine willingness to walk away. Sellers' agents can read buyer desperation — it changes every interaction from the first showing onward. When a buyer has one property in mind and no alternatives, they negotiate from weakness. When they have two or three serious contenders, they negotiate from strength.</p>
-<p>I always advise clients to establish in advance the number above which they will not go. That number isn't what they'd pay if they had to — it's what the property is worth given the comparable sales, the carrying costs, and the opportunity cost of the capital. In my experience, roughly one in four situations where we walk away results in the seller's agent calling back within two weeks with a new position.</p>
+<p>The most powerful negotiating position is genuine willingness to walk away. Sellers and their agents can read buyer desperation — it changes every interaction from the first visit onward. When a buyer has one property in mind and no alternatives, they negotiate from weakness. When they have two or three serious contenders, they negotiate from strength.</p>
+<p>I always advise clients to establish in advance the number above which they will not go. That number isn't what they'd pay if they had to — it's what the property is worth given comparable transactions, the carrying costs, and the opportunity cost of the capital. Roughly one in four situations where we walk away results in the seller coming back within two weeks with a substantially improved position.</p>
 <h2>Close Fast When You Have the Leverage</h2>
-<p>When a seller is motivated and the terms are converging, acceleration is your friend. Every day that passes in an open negotiation is a day that another buyer could arrive. Once you've reached agreement in principle, move decisively: order the inspection immediately, deliver the full earnest money promptly, and stay in close communication with the seller's agent. The best deals close fast because both parties want them to.</p>`,
+<p>When a seller is motivated and the terms are converging, acceleration is your friend. Every day that passes in an open negotiation is a day that another buyer could arrive. Once you've reached agreement in principle, move decisively: instruct your solicitor immediately to begin title searches, send the agreed deposit promptly, and maintain close communication with the seller's agent. The best deals close fast because both parties want them to.</p>`,
     image: 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=800&q=80',
     category: 'Buying Guide',
-    author: 'Alexandra Reeves',
+    author: 'Adaeze Okonkwo',
     date: 'March 12, 2025',
     readTime: 10,
     tags: ['Negotiation', 'Strategy', 'Tips'],
   },
   {
     id: '6',
-    title: 'New York City\'s Ultra-Luxury Market: A Deep Dive',
-    excerpt: 'The market above $10 million in Manhattan operates by different rules. Our NYC specialist reveals what drives values, who\'s buying, and how to navigate this rarified tier.',
-    content: `<p>The market above $10 million in Manhattan is a world unto itself. The rules that apply to real estate in the broader market — days on market, comparable sales, list-to-sale ratios — apply here only loosely, if at all. I've spent my career in this market, and I can tell you: it rewards patience, relationship capital, and a level of analytical rigor that most buyers never bring to bear.</p>
+    title: 'Nigeria\'s Ultra-Luxury Market: A Deep Dive',
+    excerpt: 'The market above ₦500M in Lagos and Abuja operates by entirely different rules. Our senior advisor reveals what drives values, who\'s buying, and how to navigate this rarified tier.',
+    content: `<p>The market above ₦500 million in Nigeria is a world unto itself. The rules that apply to the broader residential market — asking prices, advertised listings, standard conveyancing timelines — apply here only loosely, if at all. I've spent my career in this market, and I can tell you: it rewards patience, relationship capital, and a level of due diligence that most buyers never bring to bear.</p>
 <h2>Who Is Buying at This Level?</h2>
-<p>The buyer profile in Manhattan's ultra-luxury segment is genuinely global and increasingly diverse. The traditional cohort — Wall Street executives, hedge fund founders, and private equity principals — remains active, but they now share the market with tech founders who have monetized stakes in public or acquired companies, international buyers using New York as a dollar-denominated safe haven, and multigenerational family offices executing long-horizon real estate strategies.</p>
-<p>International demand deserves special attention. Despite periods of dollar strength, the rule-of-law premium that New York commands has never been more valuable. European buyers, in particular, view Manhattan properties with a safety that Paris, London, or Zurich can no longer fully provide in a world of shifting political risk.</p>
+<p>The buyer profile in Nigeria's ultra-luxury segment is broader than many assume. The traditional cohort — oil and gas executives, banking sector principals, and family conglomerates — remains active, but they now share the market with a new generation of tech founders who have exited companies or raised significant venture capital, diaspora investors seeking naira-denominated assets, and increasingly, institutional family offices executing multigenerational real estate strategies.</p>
+<p>International demand deserves particular attention. High-net-worth Nigerians returning from London, Dubai, and Houston are driving premium demand in Ikoyi and Maitama. They arrive with international expectations for finish quality, infrastructure reliability, and transaction professionalism — and they are changing what the market is willing to pay for properties that genuinely meet those standards.</p>
 <h2>The Off-Market Premium Is Real</h2>
-<p>My conservative estimate is that 40–50% of transactions above $10M in Manhattan never appear on StreetEasy or the MLS. They are transacted through private agent networks, often before the seller has formally committed to selling. This isn't an accident — it's a deliberate strategy by sellers who prize discretion and want to control the buyer pool.</p>
-<p>Accessing this inventory requires being known to the agents who control it, having a reputation for closing cleanly, and maintaining active buyer relationships over years, not weeks. Buyers who appear only when they're ready to purchase are never going to see the best of what's available at this level.</p>
-<h2>What $10M–$20M Actually Gets You</h2>
-<p>The $10M–$20M range is arguably the sweet spot of Manhattan's ultra-luxury market. Below $10M, the inventory is broader but the properties often lack the full-floor or floor-to-ceiling window experience that defines the category. Above $20M, the buyer pool is thin enough that liquidity risk becomes meaningful — properties can sit for years waiting for the right buyer.</p>
-<p>In 2025, $15M in the Upper East Side buys a full-floor co-op in a white-glove prewar building with approximately 4,000 square feet, high ceilings, and park or river views. The same $15M in a new development on Billionaires' Row buys roughly 3,000 square feet with higher ceilings and more dramatic views — but significantly higher carrying costs in the form of common charges and real estate taxes.</p>
-<h2>The Co-op Approval Process: What You Must Know</h2>
-<p>Manhattan's co-op market — which accounts for the majority of luxury residential inventory in the best prewar buildings — is unlike any other real estate market in the world. The board approval process requires disclosure of tax returns for three years, brokerage statements, bank statements, letters of reference, and sometimes an in-person interview.</p>
-<p>Boards can reject applicants for reasons that, in any other context, would be legally questionable. The practical implication: before you make an offer on a co-op, have your agent assess your board approval prospects honestly. A $12M offer that gets rejected after a four-month approval process is a significant waste of time and capital. The best buildings in the best locations often have the most selective boards.</p>
+<p>My conservative estimate is that 60–70% of transactions above ₦500M in Lagos are never advertised publicly. They are transacted through agent networks built over years, often before the seller has formally decided to sell. Sellers at this level — executives, politicians, businesspeople — prize discretion absolutely. A property appearing on a public listing platform signals desperation that no premium seller wants to communicate.</p>
+<p>Accessing this inventory requires being trusted by the principals and agents who control it. Buyers who approach the market transactionally, without existing relationships, will see only what everyone else sees — and pay full market price for the privilege.</p>
+<h2>What ₦500M–₦1B Actually Gets You</h2>
+<p>The ₦500M–₦1B range is the most active tier in Nigeria's ultra-luxury segment. In Ikoyi, ₦600M–₦800M buys a newly built detached four- to five-bedroom residence with a pool, boys' quarters, and modern finishing on a standard plot. The same budget in Maitama, Abuja commands substantially more land — often a full 2,000sqm plot — but typically with less architectural ambition than Lagos's best contemporary builds.</p>
+<p>Banana Island is a separate category entirely. Even ₦1B will not buy a new-build on Nigeria's most exclusive address. Properties on the island rarely change hands, and when they do, it is at values that reflect not just the property but the irreplaceable address.</p>
+<h2>Title Due Diligence: The Non-Negotiable</h2>
+<p>Title risk is the defining feature of Nigerian real estate that separates it from mature markets. At the ultra-luxury level, the stakes of inadequate due diligence are proportionate: a ₦700M transaction with a defective title is a ₦700M problem. Governors' Consent and Certificate of Occupancy (C of O) are the minimum acceptable title forms; anything less requires specialist legal review before any commitment is made.</p>
+<p>At ChicsRetreat, we will not facilitate a transaction above ₦100M without independent title verification. It adds two to four weeks to the process. It has saved clients from catastrophic errors on more than one occasion.</p>
 <h2>The Long View on Values</h2>
-<p>Manhattan ultra-luxury real estate has delivered compelling long-term returns, but the path has not been linear. The 2008–2009 downturn cut values sharply; the 2014–2019 period saw extraordinary appreciation; 2020 brought disruption followed by recovery. The investors who have done best are those who held through the cycles and bought with a ten-plus-year horizon in mind.</p>
-<p>The macro case for Manhattan remains intact: a globally unique concentration of financial, cultural, and intellectual capital in a finite geography with no ability to expand horizontally. Supply constraints in the ultra-luxury segment are permanent. Long-term demand from global wealth creation continues to grow. For buyers with the capital and the patience, the analysis points in one direction.</p>`,
+<p>Nigerian ultra-luxury real estate has delivered compelling returns, but measured in naira rather than dollars. For buyers whose liabilities and consumption are predominantly naira-denominated, the returns have been exceptional — particularly in the Ikoyi corridor, where prime values have consistently outpaced inflation. For buyers benchmarking in foreign currency, the story is more nuanced, as naira depreciation periodically compresses dollar-equivalent returns.</p>
+<p>The structural case remains intact: a rapidly urbanising population, a finite supply of Grade A addresses, a growing high-net-worth cohort, and rising international interest in Nigerian assets. For buyers with the capital, the relationships, and the patience to navigate the market properly, the opportunity is real — and the competition is lower than you might expect.</p>`,
     image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&q=80',
     category: 'Market Trends',
-    author: 'Marcus Chen',
+    author: 'Chukwuemeka Eze',
     date: 'March 5, 2025',
     readTime: 9,
-    tags: ['New York', 'Ultra-Luxury', 'Market'],
+    tags: ['Nigeria', 'Ultra-Luxury', 'Market'],
   },
 ];
 
 export function formatPrice(price: number, listingType: ListingType): string {
   if (listingType === 'rent') {
-    return `$${price.toLocaleString()}/mo`;
+    return `₦${price.toLocaleString()}/mo`;
   }
   if (price >= 1000000) {
-    return `$${(price / 1000000).toFixed(price % 1000000 === 0 ? 0 : 1)}M`;
+    return `₦${(price / 1000000).toFixed(price % 1000000 === 0 ? 0 : 1)}M`;
   }
-  return `$${price.toLocaleString()}`;
+  return `₦${price.toLocaleString()}`;
 }
 
 export function getAgentById(id: string): Agent | undefined {
