@@ -433,7 +433,21 @@ export const blogPosts: BlogPost[] = [
     id: '1',
     title: '2025 Luxury Real Estate Market Outlook: What Buyers Need to Know',
     excerpt: 'The luxury real estate market is entering a new phase. Here\'s what high-net-worth buyers should expect in the coming year and how to position yourself for success.',
-    content: '',
+    content: `<p>The luxury real estate market is entering 2025 in a fundamentally different position than it occupied just two years ago. After the rate-shock correction of 2023, the market has found its footing — and for buyers with the capital and conviction to act, the window of opportunity is unusually attractive.</p>
+<h2>The Rate Environment Is Finally Cooperating</h2>
+<p>The Federal Reserve's pivot toward rate cuts, which began in late 2024, has already filtered through to jumbo mortgage markets. Rates on loans above $2 million have declined meaningfully from their 2023 peaks, reducing carrying costs for financed purchases. For cash buyers — who represent the majority of transactions above $5M — the impact is indirect but real: lower rates bring more financed buyers back into the pool, tightening competition on desirable properties.</p>
+<h2>Inventory Remains the Key Constraint</h2>
+<p>Despite broad market softness in the $1M–$2M range, the true luxury segment — properties above $3M — continues to suffer from severe inventory constraints. Owners of exceptional properties have little incentive to sell into a market where finding an equivalent replacement would be difficult and expensive. This dynamic shows no signs of reversing in 2025.</p>
+<p>Markets most affected by this scarcity: Malibu oceanfront, Beverly Hills flats, Manhattan penthouses above $10M, and Florida's coastal barrier islands. In these markets, properties that come to market are often sold within days — sometimes before they appear on public databases.</p>
+<h2>New Construction Creates Opportunities</h2>
+<p>The most interesting story of 2025 may be the delivery pipeline. A significant number of ultra-luxury condominium projects conceived before the 2022 rate spike are now completing, particularly in Miami, New York, and Los Angeles. This creates negotiating leverage that hasn't existed in the resale market for years.</p>
+<p>Developers who pre-sold at 2021–2022 price points may be willing to negotiate on parking, storage, and closing costs to clear remaining inventory. Buyers who engage early — before these buildings achieve stabilized occupancy — can capture meaningful value.</p>
+<h2>The Geographic Shift Continues</h2>
+<p>Sun Belt markets that surged during the pandemic era have undergone a healthy correction. Austin, Phoenix, and Nashville saw double-digit price growth followed by retrenchment — and are now attractively priced relative to their long-term fundamentals. Remote work normalization means buyers are no longer choosing between career and lifestyle.</p>
+<p>Meanwhile, New York and California markets are seeing a quiet resurgence of interest from buyers who left during the pandemic and have been priced out of the markets they moved to. The appeal of world-class culture, walkability, and professional infrastructure is proving durable.</p>
+<h2>What Sophisticated Buyers Are Doing Right Now</h2>
+<p>The buyers we're advising at LuxeEstates are taking a portfolio approach to real estate. Rather than concentrating capital in a single property, many are diversifying across markets — pairing a primary residence with a rental income property in a high-yield market like Miami or a vacation property in a mountain or coastal destination.</p>
+<p>Whatever your strategy, the consistent advice from our team is this: work with an agent who has genuine market relationships. In the luxury segment, the best opportunities never reach the open market. They're transacted quietly between agents who trust each other and whose clients' needs align. That network is the most valuable asset we offer.</p>`,
     image: 'https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800&q=80',
     category: 'Market Trends',
     author: 'Marcus Chen',
@@ -445,7 +459,22 @@ export const blogPosts: BlogPost[] = [
     id: '2',
     title: 'The Ultimate Guide to Buying Your First Luxury Home',
     excerpt: 'Stepping into the luxury market for the first time? Our comprehensive guide walks you through every step — from securing financing to closing the deal on your dream property.',
-    content: '',
+    content: `<p>Entering the luxury real estate market for the first time is both exhilarating and daunting. The properties are extraordinary. The stakes are high. The process involves nuances that simply don't apply in the mass market. After 15 years guiding first-time luxury buyers through transactions from $2M to $20M, here is what I wish every client knew before we started.</p>
+<h2>Understand the Financing Landscape First</h2>
+<p>Jumbo mortgages — loans above the conforming limit, currently around $766,550 in most markets — operate by different rules than conventional mortgages. Lenders require more documentation, larger reserves, and impose stricter debt-to-income requirements. The approval process takes longer.</p>
+<p>Before you tour a single property, get pre-approved. Not pre-qualified — actually pre-approved. This means submitting your full financial picture to a lender who specializes in jumbo lending. In competitive luxury markets, sellers will not consider an offer from a buyer who can't demonstrate financing certainty. Cash is even better: if you have the option to close in cash and refinance later, that flexibility can be worth hundreds of thousands in negotiating leverage.</p>
+<h2>Choose Your Agent Carefully</h2>
+<p>The luxury market is small, relationship-driven, and deeply dependent on trust. The agent you choose will determine which properties you see, how sellers perceive your offer, and ultimately what you pay. This is not a market where you want to work with a generalist who dabbles in the high end occasionally.</p>
+<p>Ask prospective agents: How many transactions above your target price have you closed in the past 12 months? What off-market opportunities are you currently aware of? Can you provide references from buyers at my price point? The answers will tell you everything.</p>
+<h2>Define What You Actually Need</h2>
+<p>Luxury properties are often so compelling that buyers lose sight of their actual requirements. I've seen clients fall in love with extraordinary estates that were too large to maintain, too far from schools, or in HOA structures they hadn't fully understood. Before viewing anything, write down your non-negotiables and stick to them.</p>
+<p>Consider: proximity to work, schools, and airports; property type (estate vs. condo vs. urban townhouse); indoor/outdoor living priorities; privacy requirements; and your appetite for renovation versus turnkey condition. Properties requiring renovation are almost always underpriced relative to turnkey equivalents — but renovation in the luxury segment can easily run $1,000–$2,000 per square foot for quality work.</p>
+<h2>Commission a Pre-Offer Inspection</h2>
+<p>Many luxury buyers are reluctant to commission inspections before making an offer, fearing they'll lose money if the deal falls through. This is a false economy. A thorough inspection by a specialist who understands high-end construction can identify issues that would cost millions to remediate — roofing, foundation, mechanical systems, and environmental concerns like mold or soil contamination are common in older luxury properties.</p>
+<p>In competitive situations, consider commissioning a pre-inspection and offering to waive the inspection contingency in your offer. This substantially strengthens your position while still protecting you from material surprises.</p>
+<h2>Understand the Full Cost of Ownership</h2>
+<p>The purchase price is only the beginning. Before you make an offer, understand the ongoing carrying costs: property taxes (which can be $50,000–$200,000+ per year on high-value properties), homeowner's association fees, insurance (luxury properties often require specialized coverage), and staffing costs if the property requires a housekeeper, groundskeeper, or property manager.</p>
+<p>For properties in California, Proposition 13 means reassessment at purchase — your taxes will be based on the purchase price, not the prior owner's basis. In Florida, homestead exemption provides meaningful savings for primary residents. These details matter when comparing the economics of competing properties.</p>`,
     image: 'https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=800&q=80',
     category: 'Buying Guide',
     author: 'Alexandra Reeves',
@@ -457,7 +486,22 @@ export const blogPosts: BlogPost[] = [
     id: '3',
     title: 'Top 5 Miami Neighborhoods for Real Estate Investment in 2025',
     excerpt: 'Miami continues to attract global capital. We break down the five neighborhoods offering the best combination of appreciation potential and rental yields right now.',
-    content: '',
+    content: `<p>Miami's real estate market has matured remarkably in the past decade. What was once a market driven primarily by South American capital flight has become a globally recognized investment destination attracting buyers from New York, California, Europe, and Asia. The best opportunities are still ahead — if you know where to look.</p>
+<h2>1. Coconut Grove: The Undervalued Classic</h2>
+<p>Coconut Grove is Miami's oldest neighborhood and, I would argue, its most undervalued. Mature tree canopies, a walkable village center, and a genuinely diverse mix of architecture — from mid-century modern to new construction — make it unique among Miami's neighborhoods. It doesn't have the flash of Brickell or South Beach, but the fundamentals are compelling.</p>
+<p>Prices per square foot in the Grove remain 20–30% below comparable neighborhoods, and the pipeline of new luxury construction is limited by the neighborhood's low-density zoning. Waterfront single-family homes on the bay are trading at $3M–$8M, with strong rental demand from the tech and creative communities relocating to Miami.</p>
+<h2>2. Edgewater: The Next Brickell</h2>
+<p>A decade ago, Edgewater was a transitional neighborhood of aging apartment buildings between downtown and Wynwood. Today, it hosts some of the most striking new luxury towers in the city, and the transformation is accelerating. Its Biscayne Bay frontage — largely undeveloped compared to Brickell's densely built waterfront — creates an unusual opportunity: bay views at prices that still lag Brickell by 15–25%.</p>
+<p>The investor case here is straightforward: new towers from premier developers are commanding $700–$900 per square foot on pre-sales. As the neighborhood's amenity base fills in, those numbers will converge with Brickell's $1,000+ pricing. Buyers who act before that convergence happens capture the spread.</p>
+<h2>3. Coral Gables: The Stability Play</h2>
+<p>If you're seeking capital preservation combined with reliable rental income, Coral Gables is the market's most consistent performer. The city's strict architectural standards and limited new development create enduring scarcity. The University of Miami anchors demand, and the presence of major multinational corporations in Brickell has pushed executive housing demand into the Gables' beautiful historic neighborhoods.</p>
+<p>Single-family homes in the $2M–$4M range are particularly attractive for investors who want to offer furnished rentals to corporate relocations. Gross yields of 5–6% are achievable — exceptional for the quality of property involved.</p>
+<h2>4. South of Fifth: The Luxury Rental Crown Jewel</h2>
+<p>South of Fifth is the quiet, refined residential pocket at the southern tip of South Beach that has attracted the city's most sophisticated residents for thirty years. Unlike the tourist-heavy stretches of Ocean Drive, SoFi is genuinely livable — walkable to world-class restaurants, steps from the beach, and protected from the noise of the entertainment district.</p>
+<p>Luxury condos here trade at $1,500–$2,500+ per square foot, the highest in Miami outside of Fisher Island. Monthly rental rates for furnished units run $15,000–$40,000, making even a $3M unit cash-flow positive when occupied.</p>
+<h2>5. Brickell Key: The Best-Kept Secret</h2>
+<p>Brickell Key is a man-made island connected to the Brickell financial district by a single bridge. The island's exclusivity, security, and bayfront setting have made it a perennial favorite with international buyers who value privacy above all else — yet it consistently trades at a discount to mainland Brickell.</p>
+<p>The opportunity to buy at pre-renovation prices in the older buildings and benefit from the subsequent value increase is real. Watch for motivated sellers — they represent the best risk/reward in the Miami market right now.</p>`,
     image: 'https://images.unsplash.com/photo-1506966953602-c20cc11f75e3?w=800&q=80',
     category: 'Investment Tips',
     author: 'Sofia Martinez',
@@ -469,7 +513,22 @@ export const blogPosts: BlogPost[] = [
     id: '4',
     title: 'How Smart Home Technology is Transforming Luxury Real Estate',
     excerpt: 'From AI-powered climate control to biometric security systems, we explore how cutting-edge technology is redefining what luxury means in modern real estate.',
-    content: '',
+    content: `<p>When I began my career in real estate twenty years ago, a "smart home" meant a good security system and perhaps a built-in sound system. Today, the technology infrastructure of a luxury home is as important to sophisticated buyers as the kitchen or master suite. Understanding what's genuinely valuable — and what's expensive novelty — is essential knowledge for anyone in this market.</p>
+<h2>The Control Layer: Where It All Starts</h2>
+<p>Every truly integrated smart home runs on a unified control platform. The market leaders — Crestron, Control4, and Savant — are to smart homes what luxury car brands are to automobiles: not just prettier, but fundamentally better engineered. These platforms don't just connect devices; they learn patterns, anticipate needs, and provide seamless control through touchscreens, keypads, and voice commands throughout the home.</p>
+<p>The key differentiator at the luxury level is professional programming and ongoing support. Consumer-grade smart home systems can be configured by homeowners, but the reliability and sophistication that buyers expect in a $5M+ home require dedicated installers and support contracts. Expect to invest $50,000–$300,000+ for a properly integrated system in a large estate.</p>
+<h2>Climate Intelligence Is the Quiet Revolution</h2>
+<p>HVAC technology has advanced more than any other home system in the past decade, and the implications for both comfort and operating costs are profound. AI-driven climate management systems learn occupancy patterns, optimize for energy efficiency, and can manage multi-zone systems with extraordinary precision.</p>
+<p>For large estates — particularly properties above 7,000 square feet with multiple zones — intelligent climate management can reduce annual energy costs by 30–40%. In California, where electricity rates have reached $0.40+/kWh in peak periods, the payback period on a sophisticated climate system can be as short as three years.</p>
+<h2>Security and Access Have Been Transformed</h2>
+<p>Biometric access — fingerprint, facial recognition, and palm vein readers — is now standard in new luxury construction. These systems offer two advantages over traditional key and code systems: security is genuinely higher, and access management becomes effortless. Grant and revoke access to staff, guests, or contractors remotely, with complete audit trails of who entered and when.</p>
+<p>AI-powered camera analytics can distinguish between package deliveries, known family members, and unknown visitors — alerting homeowners only when truly warranted, rather than flooding their phones with hundreds of motion alerts daily.</p>
+<h2>The Wellness Home: A New Category Emerges</h2>
+<p>Perhaps the most significant emerging category in luxury home technology is what designers are calling the "wellness home." This encompasses circadian lighting that modulates color temperature throughout the day to support natural sleep patterns, air quality systems that continuously monitor and filter particulates and VOCs, and water filtration systems that treat every tap to laboratory purity standards.</p>
+<p>Buyers returning from ultra-luxury hotel stays increasingly want to replicate those environmental conditions at home. The technology to do so now exists at a residential scale — and buyers who've experienced it will not accept less.</p>
+<h2>What to Ask When Evaluating a Smart Home</h2>
+<p>Not all smart homes are created equal. When evaluating a technology-enabled property, ask: Who installed the system and what is the ongoing support arrangement? Is the control platform a consumer product or a professional-grade system? What is the software upgrade path? Is there a documented network topology and device inventory?</p>
+<p>Properties with fragmented, consumer-grade systems that lack documentation and support are often more liability than asset. Properties with properly engineered, documented, and supported systems command — and deserve — a meaningful premium.</p>`,
     image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
     category: 'Lifestyle',
     author: 'James Whitfield',
@@ -481,7 +540,21 @@ export const blogPosts: BlogPost[] = [
     id: '5',
     title: 'Negotiation Secrets: How We Save Clients Millions',
     excerpt: 'The best real estate negotiations happen before you ever make an offer. Here are the insider strategies our agents use to consistently close deals at below-asking prices.',
-    content: '',
+    content: `<p>The question I am asked more often than any other is: how do your clients consistently get deals that other buyers miss? After 15 years and over $500M in closed transactions, the answer is never one thing. It's a system. And every part of that system starts before you ever pick up the phone to make an offer.</p>
+<h2>Intelligence Is Your Most Valuable Asset</h2>
+<p>Great negotiators win in real estate because they know things their counterpart doesn't. Before I advise a client to make an offer on any property, I invest serious time in understanding the seller's situation. How long has the property been on the market? Did it come off the market and re-list? Were there price reductions, and if so, how large were they and when did they happen? Has the seller bought another property already?</p>
+<p>Each of these facts creates leverage. A seller who has already purchased their next home is carrying two mortgages and has strong incentive to close quickly. An estate sale may be more emotional — the family may resist below-ask offers on principle even when it's economically irrational. Knowing the difference shapes every offer you make.</p>
+<h2>Price Is Only One of Many Variables</h2>
+<p>Amateur buyers negotiate on price. Sophisticated buyers negotiate on the package. In luxury real estate, the contract contains dozens of terms that carry real economic weight: earnest money and its release conditions, inspection contingency periods, financing contingencies, personal property inclusions, closing date, seller-paid closing costs, and post-closing occupancy arrangements.</p>
+<p>I've saved clients $300,000 on paper by accepting a seller's asking price while negotiating aggressively on terms that reduced the effective price — furniture inclusions that would have cost $150,000 to replace, a seller-paid rate buydown worth $80,000 over five years, and an extended escrow that gave my client time to structure a 1031 exchange. The listing price never changed.</p>
+<h2>The Psychology of the Counter-Offer</h2>
+<p>How you structure your initial offer communicates as much as the number itself. An offer at a round number ($3,000,000 on a $3,500,000 listing) signals that the buyer is anchoring at a psychologically simple number — not that they've done serious homework. An offer at $3,187,500 says something different: that the buyer has analyzed the comparable sales and arrived at a precise conclusion. The second offer is taken more seriously, even if the number is lower.</p>
+<p>Similarly, a clean, well-organized offer package with a strong pre-approval letter, evidence of funds, and a brief personal letter from the buyer is more compelling than a bare contract. Sellers are human beings. They respond to buyers who seem worthy of their home.</p>
+<h2>Know When to Walk Away</h2>
+<p>The most powerful negotiating position is genuine willingness to walk away. Sellers' agents can read buyer desperation — it changes every interaction from the first showing onward. When a buyer has one property in mind and no alternatives, they negotiate from weakness. When they have two or three serious contenders, they negotiate from strength.</p>
+<p>I always advise clients to establish in advance the number above which they will not go. That number isn't what they'd pay if they had to — it's what the property is worth given the comparable sales, the carrying costs, and the opportunity cost of the capital. In my experience, roughly one in four situations where we walk away results in the seller's agent calling back within two weeks with a new position.</p>
+<h2>Close Fast When You Have the Leverage</h2>
+<p>When a seller is motivated and the terms are converging, acceleration is your friend. Every day that passes in an open negotiation is a day that another buyer could arrive. Once you've reached agreement in principle, move decisively: order the inspection immediately, deliver the full earnest money promptly, and stay in close communication with the seller's agent. The best deals close fast because both parties want them to.</p>`,
     image: 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=800&q=80',
     category: 'Buying Guide',
     author: 'Alexandra Reeves',
@@ -493,7 +566,22 @@ export const blogPosts: BlogPost[] = [
     id: '6',
     title: 'New York City\'s Ultra-Luxury Market: A Deep Dive',
     excerpt: 'The market above $10 million in Manhattan operates by different rules. Our NYC specialist reveals what drives values, who\'s buying, and how to navigate this rarified tier.',
-    content: '',
+    content: `<p>The market above $10 million in Manhattan is a world unto itself. The rules that apply to real estate in the broader market — days on market, comparable sales, list-to-sale ratios — apply here only loosely, if at all. I've spent my career in this market, and I can tell you: it rewards patience, relationship capital, and a level of analytical rigor that most buyers never bring to bear.</p>
+<h2>Who Is Buying at This Level?</h2>
+<p>The buyer profile in Manhattan's ultra-luxury segment is genuinely global and increasingly diverse. The traditional cohort — Wall Street executives, hedge fund founders, and private equity principals — remains active, but they now share the market with tech founders who have monetized stakes in public or acquired companies, international buyers using New York as a dollar-denominated safe haven, and multigenerational family offices executing long-horizon real estate strategies.</p>
+<p>International demand deserves special attention. Despite periods of dollar strength, the rule-of-law premium that New York commands has never been more valuable. European buyers, in particular, view Manhattan properties with a safety that Paris, London, or Zurich can no longer fully provide in a world of shifting political risk.</p>
+<h2>The Off-Market Premium Is Real</h2>
+<p>My conservative estimate is that 40–50% of transactions above $10M in Manhattan never appear on StreetEasy or the MLS. They are transacted through private agent networks, often before the seller has formally committed to selling. This isn't an accident — it's a deliberate strategy by sellers who prize discretion and want to control the buyer pool.</p>
+<p>Accessing this inventory requires being known to the agents who control it, having a reputation for closing cleanly, and maintaining active buyer relationships over years, not weeks. Buyers who appear only when they're ready to purchase are never going to see the best of what's available at this level.</p>
+<h2>What $10M–$20M Actually Gets You</h2>
+<p>The $10M–$20M range is arguably the sweet spot of Manhattan's ultra-luxury market. Below $10M, the inventory is broader but the properties often lack the full-floor or floor-to-ceiling window experience that defines the category. Above $20M, the buyer pool is thin enough that liquidity risk becomes meaningful — properties can sit for years waiting for the right buyer.</p>
+<p>In 2025, $15M in the Upper East Side buys a full-floor co-op in a white-glove prewar building with approximately 4,000 square feet, high ceilings, and park or river views. The same $15M in a new development on Billionaires' Row buys roughly 3,000 square feet with higher ceilings and more dramatic views — but significantly higher carrying costs in the form of common charges and real estate taxes.</p>
+<h2>The Co-op Approval Process: What You Must Know</h2>
+<p>Manhattan's co-op market — which accounts for the majority of luxury residential inventory in the best prewar buildings — is unlike any other real estate market in the world. The board approval process requires disclosure of tax returns for three years, brokerage statements, bank statements, letters of reference, and sometimes an in-person interview.</p>
+<p>Boards can reject applicants for reasons that, in any other context, would be legally questionable. The practical implication: before you make an offer on a co-op, have your agent assess your board approval prospects honestly. A $12M offer that gets rejected after a four-month approval process is a significant waste of time and capital. The best buildings in the best locations often have the most selective boards.</p>
+<h2>The Long View on Values</h2>
+<p>Manhattan ultra-luxury real estate has delivered compelling long-term returns, but the path has not been linear. The 2008–2009 downturn cut values sharply; the 2014–2019 period saw extraordinary appreciation; 2020 brought disruption followed by recovery. The investors who have done best are those who held through the cycles and bought with a ten-plus-year horizon in mind.</p>
+<p>The macro case for Manhattan remains intact: a globally unique concentration of financial, cultural, and intellectual capital in a finite geography with no ability to expand horizontally. Supply constraints in the ultra-luxury segment are permanent. Long-term demand from global wealth creation continues to grow. For buyers with the capital and the patience, the analysis points in one direction.</p>`,
     image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&q=80',
     category: 'Market Trends',
     author: 'Marcus Chen',

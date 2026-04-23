@@ -29,6 +29,8 @@ export default function HomePage() {
   const router = useRouter();
   const [listingType, setListingType] = useState<'buy' | 'rent'>('buy');
   const [location, setLocation] = useState('');
+  const [subEmail, setSubEmail] = useState('');
+  const [subStatus, setSubStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
   const featuredProperties = properties.filter(p => p.featured);
 
@@ -40,6 +42,22 @@ export default function HomePage() {
     router.push(`/properties?${params.toString()}`);
   };
 
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!subEmail) return;
+    setSubStatus('loading');
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: subEmail }),
+      });
+      setSubStatus(res.ok ? 'success' : 'error');
+    } catch {
+      setSubStatus('error');
+    }
+  };
+
   return (
     <>
       {/* HERO */}
@@ -49,6 +67,8 @@ export default function HomePage() {
             src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=90"
             alt="Luxury Estate"
             fill
+            quality={90}
+            sizes="100vw"
             className="object-cover"
             priority
           />
@@ -269,18 +289,18 @@ export default function HomePage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="relative rounded-2xl overflow-hidden h-52">
-                    <Image src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&q=80" alt="Luxury interior" fill className="object-cover" />
+                    <Image src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&q=80" alt="" fill quality={85} sizes="(max-width: 1024px) 50vw, 25vw" className="object-cover" />
                   </div>
                   <div className="relative rounded-2xl overflow-hidden h-36">
-                    <Image src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="Modern home" fill className="object-cover" />
+                    <Image src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="" fill quality={85} sizes="(max-width: 1024px) 50vw, 25vw" className="object-cover" />
                   </div>
                 </div>
                 <div className="space-y-4 mt-10">
                   <div className="relative rounded-2xl overflow-hidden h-36">
-                    <Image src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80" alt="Pool" fill className="object-cover" />
+                    <Image src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80" alt="" fill quality={85} sizes="(max-width: 1024px) 50vw, 25vw" className="object-cover" />
                   </div>
                   <div className="relative rounded-2xl overflow-hidden h-52">
-                    <Image src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80" alt="Estate" fill className="object-cover" />
+                    <Image src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80" alt="" fill quality={85} sizes="(max-width: 1024px) 50vw, 25vw" className="object-cover" />
                   </div>
                 </div>
               </div>
@@ -361,6 +381,8 @@ export default function HomePage() {
                     src={agent.photo}
                     alt={agent.name}
                     fill
+                    quality={85}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
@@ -419,7 +441,7 @@ export default function HomePage() {
                 </p>
                 <div className="flex items-center gap-3 pt-4 border-t border-white/10">
                   <div className="relative w-11 h-11 rounded-full overflow-hidden flex-shrink-0">
-                    <Image src={t.photo} alt={t.name} fill className="object-cover" />
+                    <Image src={t.photo} alt={t.name} fill quality={85} sizes="44px" className="object-cover" />
                   </div>
                   <div>
                     <p className="font-semibold text-white text-sm">{t.name}</p>
@@ -458,6 +480,8 @@ export default function HomePage() {
                     src={post.image}
                     alt={post.title}
                     fill
+                    quality={85}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-3 left-3">
@@ -489,6 +513,8 @@ export default function HomePage() {
             src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=80"
             alt="Luxury Home"
             fill
+            quality={85}
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0" style={{ background: 'rgba(10,31,68,0.88)' }} />
@@ -503,22 +529,31 @@ export default function HomePage() {
           <p className="text-white/70 mb-8 leading-relaxed">
             Join 12,000+ discerning buyers and investors who receive our curated weekly digest of off-market deals and market insights.
           </p>
-          <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onSubmit={e => e.preventDefault()}>
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              className="flex-1 px-4 py-3.5 rounded-xl text-sm border border-white/20 text-white placeholder-white/40 outline-none focus:border-amber-400 transition-all backdrop-blur-sm"
-              style={{ background: 'rgba(255,255,255,0.1)' }}
-            />
-            <button
-              type="submit"
-              className="px-6 py-3.5 rounded-xl text-sm font-semibold text-white flex-shrink-0 hover:opacity-90 transition-all"
-              style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
-            >
-              Subscribe
-            </button>
-          </form>
-          <p className="text-white/30 text-xs mt-3">No spam. Unsubscribe anytime.</p>
+          {subStatus === 'success' ? (
+            <p className="text-green-300 font-semibold text-sm py-4">You&apos;re on the list! Watch your inbox for exclusive deals.</p>
+          ) : (
+            <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onSubmit={handleSubscribe}>
+              <input
+                type="email"
+                required
+                value={subEmail}
+                onChange={e => setSubEmail(e.target.value)}
+                placeholder="Enter your email address"
+                className="flex-1 px-4 py-3.5 rounded-xl text-sm border border-white/20 text-white placeholder-white/40 outline-none focus:border-amber-400 transition-all backdrop-blur-sm"
+                style={{ background: 'rgba(255,255,255,0.1)' }}
+              />
+              <button
+                type="submit"
+                disabled={subStatus === 'loading'}
+                className="px-6 py-3.5 rounded-xl text-sm font-semibold text-white flex-shrink-0 hover:opacity-90 transition-all disabled:opacity-60"
+                style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+              >
+                {subStatus === 'loading' ? 'Subscribing…' : 'Subscribe'}
+              </button>
+            </form>
+          )}
+          {subStatus === 'error' && <p className="text-red-300 text-xs mt-2">Something went wrong. Please try again.</p>}
+          {subStatus !== 'success' && <p className="text-white/30 text-xs mt-3">No spam. Unsubscribe anytime.</p>}
         </div>
       </section>
     </>

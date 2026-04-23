@@ -85,10 +85,14 @@ export default function DashboardPage() {
         {/* Tabs */}
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
           {/* Tab Bar */}
-          <div className="flex border-b border-gray-100">
+          <div className="flex border-b border-gray-100" role="tablist" aria-label="Dashboard sections">
             {tabs.map(({ id, label, icon: Icon }) => (
               <button
                 key={id}
+                role="tab"
+                aria-selected={activeTab === id}
+                aria-controls={`tabpanel-${id}`}
+                id={`tab-${id}`}
                 onClick={() => setActiveTab(id)}
                 className="flex-1 sm:flex-none flex items-center justify-center sm:justify-start gap-2 px-4 sm:px-6 py-4 text-sm font-medium transition-all border-b-2"
                 style={activeTab === id
@@ -96,7 +100,7 @@ export default function DashboardPage() {
                   : { color: '#6b7280', borderBottomColor: 'transparent' }
                 }
               >
-                <Icon size={16} />
+                <Icon size={16} aria-hidden="true" />
                 <span className="hidden sm:inline">{label}</span>
               </button>
             ))}
@@ -105,7 +109,7 @@ export default function DashboardPage() {
           <div className="p-6">
             {/* Favorites Tab */}
             {activeTab === 'favorites' && (
-              <>
+              <div role="tabpanel" id="tabpanel-favorites" aria-labelledby="tab-favorites">
                 {favorites.length === 0 ? (
                   <div className="text-center py-16">
                     <Heart size={40} className="mx-auto mb-3 text-gray-200" />
@@ -155,12 +159,12 @@ export default function DashboardPage() {
                     ))}
                   </div>
                 )}
-              </>
+              </div>
             )}
 
             {/* Recently Viewed Tab */}
             {activeTab === 'viewed' && (
-              <div className="space-y-3">
+              <div role="tabpanel" id="tabpanel-viewed" aria-labelledby="tab-viewed" className="space-y-3">
                 {recentlyViewed.map((p, i) => (
                   <Link
                     key={p.id}
@@ -190,7 +194,7 @@ export default function DashboardPage() {
 
             {/* Alerts Tab */}
             {activeTab === 'alerts' && (
-              <div className="space-y-3">
+              <div role="tabpanel" id="tabpanel-alerts" aria-labelledby="tab-alerts" className="space-y-3">
                 {mockAlerts.map(alert => (
                   <div key={alert.id} className="flex items-start gap-4 p-4 rounded-xl border border-gray-100 bg-gray-50">
                     <div

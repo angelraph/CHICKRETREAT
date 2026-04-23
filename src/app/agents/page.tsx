@@ -20,6 +20,7 @@ export default function AgentsPage() {
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
             alt=""
             fill
+            quality={85}
             className="object-cover"
           />
         </div>
@@ -74,6 +75,8 @@ export default function AgentsPage() {
                     src={agent.photo}
                     alt={agent.name}
                     fill
+                    quality={85}
+                    sizes="(max-width: 640px) 100vw, 208px"
                     className="object-cover object-top"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/40 via-transparent to-transparent" />

@@ -10,6 +10,24 @@ const categories = ['All', 'Market Trends', 'Buying Guide', 'Investment Tips', '
 
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState('All');
+  const [subEmail, setSubEmail] = useState('');
+  const [subStatus, setSubStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!subEmail) return;
+    setSubStatus('loading');
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: subEmail }),
+      });
+      setSubStatus(res.ok ? 'success' : 'error');
+    } catch {
+      setSubStatus('error');
+    }
+  };
   const featured = blogPosts[0];
   const rest = blogPosts.slice(1).filter(p => activeCategory === 'All' || p.category === activeCategory);
 
@@ -56,6 +74,8 @@ export default function BlogPage() {
                 src={featured.image}
                 alt={featured.title}
                 fill
+                quality={85}
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute top-4 left-4">
@@ -93,6 +113,8 @@ export default function BlogPage() {
                   src={post.image}
                   alt={post.title}
                   fill
+                  quality={85}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-3 left-3">
@@ -130,20 +152,29 @@ export default function BlogPage() {
           <p className="text-white/70 mb-6 max-w-md mx-auto text-sm">
             Get our weekly digest of market analysis, investment opportunities, and exclusive listings delivered to your inbox.
           </p>
-          <form className="flex flex-col sm:flex-row gap-3 max-w-sm mx-auto" onSubmit={e => e.preventDefault()}>
-            <input
-              type="email"
-              placeholder="Your email address"
-              className="flex-1 px-4 py-3 rounded-xl text-sm bg-white/10 border border-white/20 text-white placeholder-white/40 outline-none focus:border-amber-400 transition-all"
-            />
-            <button
-              type="submit"
-              className="px-5 py-3 rounded-xl text-sm font-semibold text-white flex-shrink-0"
-              style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
-            >
-              Subscribe
-            </button>
-          </form>
+          {subStatus === 'success' ? (
+            <p className="text-green-300 font-semibold text-sm py-2">You&apos;re subscribed! Market insights coming your way.</p>
+          ) : (
+            <form className="flex flex-col sm:flex-row gap-3 max-w-sm mx-auto" onSubmit={handleSubscribe}>
+              <input
+                type="email"
+                required
+                value={subEmail}
+                onChange={e => setSubEmail(e.target.value)}
+                placeholder="Your email address"
+                className="flex-1 px-4 py-3 rounded-xl text-sm bg-white/10 border border-white/20 text-white placeholder-white/40 outline-none focus:border-amber-400 transition-all"
+              />
+              <button
+                type="submit"
+                disabled={subStatus === 'loading'}
+                className="px-5 py-3 rounded-xl text-sm font-semibold text-white flex-shrink-0 disabled:opacity-60"
+                style={{ background: 'linear-gradient(135deg, #C9A96E, #b8924a)' }}
+              >
+                {subStatus === 'loading' ? 'Subscribing…' : 'Subscribe'}
+              </button>
+            </form>
+          )}
+          {subStatus === 'error' && <p className="text-red-300 text-xs mt-2">Something went wrong. Please try again.</p>}
         </div>
       </div>
     </div>
